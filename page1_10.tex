@@ -1,0 +1,84 @@
+\item \textbf {User and Group Administration}
+\begin{enumerate}
+    \item \textbf {What is a user?}\newline
+    Ans. In Linux user is one who uses the system. 
+\bigskip
+\bigskip
+    \item \textbf {How many types of users available in Linux?}\newline
+    Ans.There are 5 types of users available in Linux.
+     \begin{itemize}
+    \item System user   (Admin user who control the whole system nothing but root user).
+    \item Normal user  (Created by the Super user. In RHEL - 7 the user id's from 1000 - 60000).
+    \item System user   (Created when application or software installed 
+    \item In RHEL - 7 the System users are\newline
+    Static system user id's from 1 - 200 and \newline
+    (ii) Dynamic system user user id'sfrom 201 - 999).\newline
+    \item Network user   (Nothing but remote user, ie., who are login to the system trough network  created
+    \item Windows Active Directory or in Linux LDAP or NIS). 
+    \item Sudo user   (The normal users who are having admin or Super user privileges)
+    \end{itemize}
+    \item The types of users in Linux and their attributes:\newline
+    table pending
+    \item \textbf { What is user management?}\newline
+    Ans.User management means managing user. ie., Creating the users, deleting the users and modifying the users.
+    \bigskip
+    \bigskip
+    \item \textbf{What are the important points related to users?}
+    \begin {itemize}
+    \item Ans.Users and groups are used to control access to files and resources.\newline
+    \item Users can login to the system by supplying username and passwords to the system.\newline
+    \item Every file on the system is owned by a user and associated with a group.\newline
+    \item Every process has an owner and group affiliation.\newline
+    \item Every user in the system is assigned a unique user id (uid) and group id (gid).\newline
+    \item User names and user id are stored in  /etc/passwd   file.\newline
+    \item User's passwords are stored in  /etc/shadow  file in an encrypted form.\newline
+    \item Users are assigned a home directory and a shell to work with the O/S.\newline
+    \item Users cannot read, write and execute each other's files without permission.\newline
+    \item Whenever a user is created a mail box is created automatically in /var/spool/mail  location.\newline
+    \item And some user environmental files like  .bash_logout,  .bash_profile,  .bashrc ,  ...etc., are also copied from /etc/skell   to  his/her home directory (/home/<username>).\newline 
+    \bigskip
+    \bigskip
+    \item \textbf{What are fields available in  /etc/passwd file?}\newline
+          Ans.<user name>   :   x   :   <uid>   :   <gid>   :   <comment>   : \newline 
+         <user's home directory>  :   <login shell\newline
+         (where   'x'   means link to password file ie.,  /etc/shadow   file)\newline
+    \bigskip
+    \bigskip
+    \item \textbf {What are fields available in  /etc/shadow  file?}\newline
+          Ans. user name : password : last changed : min. days : max. days : warn days : inactive days : expiry days : reserved  for future.\newline
+    \bigskip
+    \bigskip
+    \item\textbf {What are the files that are related to user management?}
+    \begin {itemize}
+    \item Ans./etc/passwd  -----> Stores user's information like user name, uid, home directory and shell ...etc.,\newline
+    \item/etc/shadow  ----> Stores user's password in encrypted form and other information.\newline
+    \item/etc/group  ------> Stores group's information like group name, gid and other information.\newline
+    \item/etc/gshadow ---> Stores group's password in encrypted form.\newline
+    \item/etc/passwd-  ---> Stores the  /etc/passwd   file backup copy.\newline
+    \item/etc/shadow- ---> Stores the /etc/shadow  file backup copy.\newline
+    \item/etc/default/useradd  ----> Whenever the user created user's default settings taken from this file.\newline
+    \item/etc/login.defs  ----> user's login defaults settings information taken from this file.\newline
+    \item/etc/skell   ------> Stores user's all environmental variables files and these are copied from this directory to user's home directory\newline
+    \end{itemize}
+    \bigskip
+    \bigskip
+    \item \textbf {In how many ways can we create the users?}
+    \begin {itemize}
+    \item Ans.(i)   # useradd    - <options><user name>
+    \item (ii)  # adduser    - <options><user name>
+    \item (iii) # newusers    <file name>   (In this file we have to enter the user details same as /etc/passwd   file)\newline
+    \end {itemize}
+    \bigskip
+    \bigskip
+    \item\textbf{What is the syntax of useradd command with full options?}
+         Ans.useradd  -u <uid>  -g <gid>  -G <secondary group> -c  <comment>  -d <home \newline
+        directory> -s <shell><user name>\newline
+        \textbf {Example:}# useradd  -u  600  -g  600  -G  java   -c  "oracle user"   -d  /home/raju   -s \newline
+     s  /bin/bash    raju\newline
+    \bigskip
+    \bigskip
+    \item\textbf {What is the syntax of adduser  command with full options?}
+           Ans.adduser  -u <uid>  -g <gid>  -G <secondary group> -c  <comment>  -d <home\newline
+    directory> -s <shell><user name>\newline
+    \textbf {Example}# adduser  -u  700  -g  700  -G  linux   -c  "oracle user"   -d  /home/ram   -s\newline  
+    /bin/bash   ram.
