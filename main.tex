@@ -1,0 +1,62 @@
+%
+% Body text font is Palatino!
+%
+
+\documentclass[a5paper,pagesize,10pt,bibtotoc,pointlessnumbers,
+normalheadings,DIV=9,twoside=false]{scrbook}
+
+% twoside, openright
+\KOMAoptions{DIV=last}
+
+\usepackage{trajan}
+ 
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage[babel,german=guillemets]{csquotes}
+
+\usepackage[sc]{mathpazo}
+\linespread{1.05} 
+
+\usepackage{verbatim} % for comments
+\usepackage{listings} % for comments
+
+%\setlength{\parindent}{10pt}
+%\setlength{\parskip}{1.4ex plus 0.35ex minus 0.3ex}
+%\setlength{\parskip}{1.4ex plus 0.35ex minus 0.3ex}
+
+\usepackage{blindtext}
+\newcommand{\q}[1]{>>\textit{#1}<<}
+
+\title{Python Interview Questions}   
+\author{Lavatech Technology} 
+\date{\today} 
+
+\begin{document}
+
+
+%=========================================
+\begin{titlepage}
+        \centering{
+            {\fontsize{20}{48}\selectfont 
+            Linux Interview Questions}
+        }\\
+            
+        \vspace{10mm}
+        \centering{\Large{Lavatech Technology}}\\
+        \vspace{\fill}
+        \centering \large{2022}
+\end{titlepage}
+
+
+%=========================================
+\newpage{}
+\input{page1_10.tex}
+\input{page11_20.tex}
+
+%=========================================
+
+
+
+\end{document}
