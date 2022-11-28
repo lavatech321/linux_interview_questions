@@ -110,5 +110,78 @@
     \newline
     \textbf{Example}\# adduser  -u  700  -g  700  -G  linux   -c  "oracle user"   -d  /home/ram   -s
     /bin/bash ram.
+
+    \bigskip
+    \bigskip
+    
+    \item\textbf{What is the syntax of newuser command?}
+    \newline
+    \begin{itemize}
+        \item Ans.newusers   <file name>	(This command will create multiple users at a time)
+        \item First we should a file and enter user's data as fields same as the fields of /etc/passwd file for how many users do you want to create and mention that file as an argument for newusers command.
+        \item When we execute this command new users will be created but their environmental files like        
+    \end{itemize}  
+        \textbf{bash\_logout,bash\_profile,bashrc and bash\_history}  files will not be copied from /etc/skell.
+         Directory. So, we have to  copied manually from  /etc/skell   directory.
+
+     \bigskip
+     \bigskip
+     
+     \item\textbf{What is the syntax of userdel command with full options?}
+     \newline
+      Ans.userdel     <options><user name>
+          The options are
+          -f :forcefully delete the user even through the user is login. The user's home directory, mail and message directories are also deleted. 
+          -r : recursively means files in the user's home directory will be deleted and  his  home directory also deleted but the other files belongs to that user should be   deleted manually.
+
+    \bigskip
+    \bigskip
+
+    \item\textbf{How to check whether user is already created or not?}
+    \newline
+     Ans.We can check in different ways.
+         id   <user name>   (It shows the user id group id and user name if that is already created)
+         grep <user name> /etc/passwd
+    
+    \bigskip
+    \bigskip
+    
+    \item\textbf{How to verify or check the integrity of the password file?}
+    \newline
+    \begin{itemize}
+        \item Ans.pwck   <options>   /etc/passwd    or
+        \item pwck   <options>   /etc/shadow 
+        \item The options are,   -q :quiet
+              r : read only	
+              s : sort the contents by uidin /etc/passwd and  /etc/shadow  files
+    \end{itemize}
+
+    \bigskip
+    \bigskip
+
+    \item\textbf{How to verify or check the integrity of the group file?}
+    \newline
+    \begin{itemize}
+        \item grpck   <options>   /etc/group    or
+        \item grpck   <options>   /etc/gshadow 
+        \item The options are,    -r:read only
+                                  -s:sort the contents by  \textbf{gidin  /etc/group   and   /etc/gshadow files.}
+    
+    \bigskip  
+    \bigskip
+    
+    \item\textbf{}
+
+
+    \end{itemize}
+
+
+
+\end{enumerate}
+
+
+
+
+    
     
 \end{enumerate}
