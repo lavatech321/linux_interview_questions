@@ -105,6 +105,7 @@
     \bigskip
 
     \item\textbf {What is the syntax of adduser  command with full options?}
+    \newline
      Ans.adduser  -u <uid>  -g <gid>  -G <secondary group> -c  <comment>  -d <home
     directory> -s <shell><user name>
     \newline
@@ -115,13 +116,12 @@
     \bigskip
     
     \item\textbf{What is the syntax of newuser command?}
-    \newline
     \begin{itemize}
-        \item Ans.newusers   <file name>	(This command will create multiple users at a time)
+        \item Ans. newusers   <file name>	(This command will create multiple users at a time)
         \item First we should a file and enter user's data as fields same as the fields of /etc/passwd file for how many users do you want to create and mention that file as an argument for newusers command.
         \item When we execute this command new users will be created but their environmental files like        
     \end{itemize}  
-        \textbf{bash\_logout,bash\_profile,bashrc and bash\_history}  files will not be copied from /etc/skell.
+        \textbf{.bash\_logout, .bash\_profile, .bashrc and .bash\_history}  files will not be copied from /etc/skell.
          Directory. So, we have to  copied manually from  /etc/skell   directory.
 
      \bigskip
@@ -129,20 +129,24 @@
      
      \item\textbf{What is the syntax of userdel command with full options?}
      \newline
-      Ans.userdel     <options><user name>
-          The options are
-          -f :forcefully delete the user even through the user is login. The user's home directory, mail and message directories are also deleted. 
-          -r : recursively means files in the user's home directory will be deleted and  his  home directory also deleted but the other files belongs to that user should be   deleted manually.
-
+      Ans.userdel <options><user name>
+      \newline
+      The options are:
+      \begin{itemize}
+          \item \textbf{-f} :forcefully delete the user even through the user is login. The user's home directory, mail and message directories are also deleted. 
+          \item \textbf{-r} : recursively means files in the user's home directory will be deleted and  his  home directory also deleted but the other files belongs to that user should be   deleted manually.
+	  \end{itemize}
     \bigskip
     \bigskip
 
     \item\textbf{How to check whether user is already created or not?}
     \newline
-     Ans.We can check in different ways.
-         id   <user name>   (It shows the user id group id and user name if that is already created)
-         grep <user name> /etc/passwd
-    
+     Ans.We can check in different ways:
+     \begin{itemize}
+     	\item id   <user name>   (It shows the user id group id and user name if that is already created)
+     	\item grep <user name> /etc/passwd
+     \end{itemize}
+         
     \bigskip
     \bigskip
     
@@ -177,11 +181,4 @@
 
 
 
-\end{enumerate}
-
-
-
-
-    
-    
 \end{enumerate}
