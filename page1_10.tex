@@ -366,9 +366,421 @@
        \begin{itemize}
           \item su -  raju	(to switch to raju user)
           \item sudo   useradd   <useradd>	(The normal user raju can also add the users to the system)
-          \item 	We can assign sudo permissions to  'n'  no. of users by specifying names separated by commas ( , ) or line by   line.
+          \item We can assign sudo permissions to  'n'  no. of users by specifying names separated by commas ( , ) or line by   line.
           \item	Instead of giving all permissions to normal user we can give only some commands.
-          
+          \item \textbf{Example} student	ALL=/usr/sbin/useradd, /usr/sbin/usermod
+                \newline
+                raju	ALL=NOPASSWD:/usr/sbin/useradd, /usr/sbin/usermod
+          \item We can also apply to one group or groups as follows.
+          \item First create the users, assign one group to those users and also assign the passwords for that users.
+          \item Open  \textbf{/etc/sudoers }file by  executing the command \textbf{visudo}and type as follows.
+          \item %<group name>	ALL=ALL %oracle	ALL=ALL   or  individual commands separated by commas,
+          \item We can also create one command alias and add some commands to that alias and mention that alias to users as follows. 
+          \item Cmnd_Alias	NETWORKING=/usr/sbin/route,	  /usr/sbin/ifconfig
+          \item <user name>	<machines>=<command alias name>
+                \newline
+          raju		ALL=
+          \item We can also create one user alias and add the users to that alias and assign some commands to that alias as follows.
+          \item User_Alias	<user alias name>=<user1>, <user2>, <user3>, 
+          \item \textbf{Example}:User_Alias	OURTEAM=raju, shyam, ram, gopal
+          \item OURTEAM	ALL=ALL (to give all permissions of sudo)
+          \item Defaults  timestamp_timeout=0 (whenever the sudo user executes any command then it will ask password every command)
+          \item The above will apply to all users including root also. If we want to make it as only for normal users, then
+          \item Defaults  :  <user1>, <user2>, <user3>  timestamp_timeout=0 (the system will ask passwords for user1, user2, user3 to execute sudo commands) 
+       \end{itemize}
+    
+    \bigskip
+    \bigskip
+
+    \item\textbf{In which location the sudo  user commands history is logged?}
+    \newline
+    \begin{itemize}
+        \item All the sudo users commands history is logged in  \textbf{/var/log/secure}file to make a record of sudo user commands.
+        \item cat   /var/log/secure	(to see the contents of this file)
+        \item tailf   /var/log/secure	(to see the updates of this file continuously and press  ctrl + c to quit the tailf)
+    \end{itemize}
+
+    \bigskip
+    \bigskip
+
+    \item\textbf{How to assign the password to normal user by him whenever first login to the system?}
+    \newline
+    Ans.Whenever the user is created and that user is trying to login to the system, it will ask the password. If the root user is not assign the password to that user, then that normal user can assign the password by his own using the following commands.
+    \begin{itemize}
+        \item useradd    <user name>		(to create the user)
+        \item passwd  -S  <user name> (to see the status of the password of that user. if root user is not   assigned the password then the password status is  locked)
+        \item passwd  -d    <user name>	(then delete the password for that user)
+        \item chage    -d   0   <user name>	(it will change the password age policy)
+        \item su   -   <user name>		(Try to switch to that user then it will display the following message)
+        \item Newpassword :	(type new password for that user)
+        \item ⦁	Retype password :(retype the password again)
+    \end{itemize}
+    \newline
+    The other useful commands:
+    \begin{itemize}
+        \item w :(this command gives the login user information like how many users currently login and full information )
+        \item who :(to see users who are currently login and on which terminal they login)
+        \item last :(see the list of users who are login and logout since the   \textbf{/var/log/wtmp } file was created)
+        \item lastb	:(to see the list of the users who tried as bad logins)
+        \item lastreboot:(to see all reboots since the log file was created)
+        \item uptime:(to see the information from how long the system is running, how many users login and load   average)
+        \item The load average is  from \textbf{1 sec	 :   5 secs   :   15 secs}
+        \item df (to see the mounted partitions, their mount points and amount of disk space)
+        \item du (to see the disk usage of the each file in bytes)
+        \item uname     -r (gives the current kernel version)
+        \item last    -x (It shows last shutdown date and time)
+        \item last    -x  grep  shutdown	  (only shutdown time shows ie., grep will filter the  'last   -x'   command)
+        \item \textbf{grep:}It is used to search a word or sentence in file (ie., inside the file)
+        \item \textbf{find :} It is used to search a command or file inside the system)
+        \item cat  /etc/shells   or  chsh   -l  	(to see how many shells that are supported by Linux)
+        \item /bin/sh : default shell for Unix
+        \item /bin/bash: default shell for Linux
+        \item /sbin/nologin:users cannot login shell
+        \item /bin/tsch:cshell to write  'C++'  language programs
+        \item /bin/csh : c shell to write  'C'  language programs
+        \item echo   SHELL :(to see the current shell)
+        \item chsh    <user name>	(to change the user's  shell)
+        \item Changing shell for   <user name> :
+        \item New shell  :   <type new shell   for example  /bin/sh   to change the current shell>New shell changed (But it will effect by restarting the server)
+        \item date R :(to display the time only)
+        \item date  +  x :(to display the date only)
+        \item history :(to see the history of the commands)
+        \item history -c :(to clear the history)
+        \item  history -r :(to recover the history)
+        \item \textbf{\_.bash\_history}  is the hidden file to store the history of the user commands. By default history size is 1000.
+        \item echo  HISTSIZE :(to check the current history size)
+        \item export   HISTSIZE=500	(to change the current history size to 500 temporarily)
+        \item export    HISTTIMEFORMAT="  "%D"   "%T"   "(to display the date and time of each command temporarily)
+        \item vim  /etc/bashrc (open this file go to last line and type as follows to make history i size date & time 	 formats permanently)
+        \item HISTSIZE=1000
+        \item HISTTIMEFORMAT='    %D   %T   '(save and exit the file and to update the effects by   #source   /etc/bashrc   command)
+        \item ~<user name>:(to go to users home directory)
+        \item what is    <command>:(to see the short description of that command)
+        \item where is	<command>(to see the location of that command and location of the document of that command)
+        \item reset :(to refresh the terminal)
+        \item whoami :(to see the current user name)
+        \item who  a  mi :(to see the current user with full details like login time and others)
+        \item passwd     <user name>	(to change the password of the user)
+        \item id (to see the current user name, user id, group name and group id, .... etc.,)
+        \item id   <user name>:(to see the specified user name, user id, group name and group id)
+        \item su :(to switch to root user without root user home directory)
+        \item su :(to switch to root user with root user home directory)
+        \item su    <user name	:(to switch to the specified user without his home directory)
+        \item su    -    <user name> :(to switch to the specified user with his home directory)
+        \item lspci	:(to list all the PCI slots present in the system)
+        \item du   -sh   /etc :(to see the size of the   /etc   on the disk in KBs or MBs)
+        \item ls    -l  :(to see the long listing of the files and directories)
+        \item d  rwx  rwx  rwx   .   2    root    root     6      Dec 17   18:00     File name
+        \item d : type of file
+        \item rwx : owner permissions
+        \item rwx :group permissions
+        \item rwx :others permissions
+        \item No ACL permissions applied
+        \item root :owner of the file
+        \item root :group ownership
+        \item 6    " size of the file
+        \item Dec 7  18:00 : Date and Time of the created or modified
+        \item File name :File name of that file
+        \item ls    -ld    <directory name>	(to see the long listing of the directories)
+        \item stat    <file name/directory name>	(to see the statistics of the file or directory)
+    \end{itemize}  
+    
+    \bigskip
+    \bigskip
+
+    \item \textbf{How many types of the files are there?}
+    \newline
+    Ans.There are 7 types of files.
+    \begin{enumerate}
+        \item  -:regular file
+        \item d :  directory
+        \item c : character device file  (Ex.  console file,  open and close terminals, ...etc.,)
+        \item b : block device file  (Ex.  device blocks like hard disks, CD/DVD disks)
+        \item s :   socket file  (programmers will deal this file)
+        \item p :   pipe file      (programmers will deal this file)
+        \item l :   linked  file  (nothing but short cut file)
+    \end{enumerate}
+
+    \bigskip
+    \bigskip
+
+    \item \textbf{What are permission types available in Linux and their numeric representations?}
+    \newline
+    Ans.There are mainly three types of permissions available in Linux and those are,
+    \begin{itemize}
+        \item read         -----     r     -----     4	null permission    ------   0
+        \item write        -----     r     -----     4
+        \item execute   -----     r     -----     4
+    \end{itemize}
+
+    \bigskip
+    \bigskip
+
+    \item \textbf{What is syntax of chmod command with full options?}
+    \newline
+    Ans.chmod   <options><file/dir  name>  (to change the owner or permissions of the file/dir)	
+    The options are,\begin{itemize}
+                         \item c :changes
+                         \item	-f :silent  (forcefully)
+                         \item	-v  : verbose
+                         \item	-R  : recursive (including sub directories and files)
+                    \end{itemize} 
+    To change the permissions the syntax is,
+    chmod  <who>	<what>	<which>		<file name or directory>
+    To change the permissions the syntax is,
+    chmod  <who>	<what>	<which>		<file name or directory>
+
+    \bigskip
+    \bigskip
+
+    \item \textbf{What is the syntax of chown command with full options?}
+    \newline
+    Ans.chown    <options><file name  or   directory>	(to change the ownership of the file or directory)
+    The options are,\begin{itemize}
+                       \item c :changes
+                       \item-f :silent  (forcefully)
+                       \item-v  : verbose
+                       \item -h  : no difference
+                       \item -R  :recursive  (including sub directories and files)
+                       \item -H  :symbolic link to a directory   (command line argument)
+                       \item -L  :symbolic link to a directory   (all)
+                       \item -p  : do not traverse
+                    \end{itemize}
+    chown   <username>  :   <group name>	<file name   or   directory name>   (to change owner and group  ownership of the file  or  directory)
+
+    \item \textbf{What is syntax of chgrp command with full options?}
+    \newline
+    Ans.chgrp    <options><file name   or   directory>	(to change group ownership of the file directory)
+    The options are,\begin{itemize}
+                       \item c: changes
+                       \item -f : silent  (forcefully)
+                       \item -v : verbose
+                       \item -h : no difference
+                       \item -R : recursive  (including sub directories and files)
+                       \item -H : symbolic link to a directory
+                       \item -L :do not traverse-p : do not traverse
+                    \end{itemize}
+    
+    \bigskip
+    \bigskip
+    
+    \item \textbf{What are the default permissions of a file and directory?}
+    \newline
+    Ans.\begin{itemize}
+            \item The default permissions of a file = 6 6 6
+             \item The default permissions of a directory = 7 7 7
+        \end{itemize}
+
+    \bigskip
+    \bigskip
+
+    \item \textbf{What is umask in linux?}
+    \newline
+    Ans.
+    \newline
+    \begin{itemize}
+        \item The user file-creation mode mask (umask) is used to determine the file permissions for newly created files or 	directories. It can be used to control the default file or directory permissions for new files. It is a four-digit octal number.  The umask value for normal user is \textbf{0002 }and the umask value for root user is \textbf{0022.}
+        \item So, the effected file permissions for normal users  = 6 6 6   -   0 0 2  =   6 6 4.
+        \item The effected directory permissions for normal users  = 7 7 7  -  0 0 2  =  7 7 5.
+        \item The effected file permissions for root user  = 6 6 6   -   0 2 2   =   6 4 4
+        \item The effected directory permissions for root user  =  7 7 7  -  0 2 2   =   7 5 5
+        \item umask	<value> 	(to change the umask value temporarily)
+        \item vim   /etc/bashrc (open this file and change the umask value to effect the whole system)
+        \item source   /etc/bashrc	(to updated the source file)
+        \item vim  .bashrc	(open this file in user's home directory and at last type as follows)
+        \item umask	<value>	(save and exit the file)
+        \item source   .bashrc   or  logout and login again (to the system to effect that umask value)
+        \item If the\textbf{/etc/login.defs }   file is corrupted then new users will be added and can be assigned the passwords  but   users cannot login.
+        \item  If the   \textbf{/etc/login.defs} file is deleted then new users cannot be added
+    \end{itemize}
+
+    \bigskip
+    \bigskip
+
+    \item \textbf{How change the permissions using numeric representation?}
+    Ans.\begin{enumerate}
+          \item The values for  read = 4,  write = 2,  execute = 1  and  null = 0.  The total value = 4 + 2 + 1 = 7
+          \item chmod    <no.><no.><no.><file name  or  directory name>
+          \textbf{Example : }chmod   7 7 4    file1	(to give read, write and execute to owner and read, write 
+          and execute to     group and read permission to others)
+          \item chmod   6 6 0	  file2 (to give read and write to owner and read and write to group and null (0)  permission to others)
+        \end{enumerate}
+
+    \bigskip
+    \bigskip
+
+    \item \textbf{Explain about set uid (suid)?}
+    Ans.\begin{itemize}
+            \item If we plan to allow all the users to execute the root users command then we go for set uid (suid).
+            \item It can be applied for user level and is applicable for files only.
+            \item chmod    u+s    <file name>	(to set the suid on that file)
+            \item chmod    u-s     <file name>	(to remove the suid from that file)
+            \item  ls   -l	(if   'x'  is replaced with   's'  in owner's  level permissions that means suid is applied on that file)
+            \item - r w s r w x r w x     <file name>     (here   's'   is called set uid or suid)
+            \item \textbf{Example :}   # chmod    u+s    /usr/sbin/init 6	(then any user can restart the system using this command 	   #init 6)
+            \item chmod    u+s    /sbin/fdis	(then any user can run the fdisk command)
+            \item strings     <command name>	(to read the binary language of the command ie., the string command converts the binary language into human readable language)
+            \item strings    mkfs	(to read the mkfs command's binary language into human readable language)
+            \item Normally set uid (suid) permission will be given on scripting files only
+        \end{itemize}
+
+    \bigskip
+    \bigskip
+
+    \item\textbf{Explain about set gid (sgid)?}
+    \newline
+    Ans.If we plan to allow all the users of one group to get the group ownership permissions then we go for 
+    set gid 	   (sgid).	It can be applied for group level and is applicable on directories only.
+    \textbf{Example:}  chmod     g+s    <directory name>	(to set the sgid on that directory)
+         \newline
+			chmod     g-s     <directory name>	(to remove the sgid from that directory)
+    
+    \bigskip
+    \bigskip
+
+    \item\textbf{Explain about sticky bit?}
+    \newline
+    Ans.It protects the data from other users when all the users having full permissions on one directory.
+    \newline
+    It can be applied on others level and applicable for directories only.
+    Example :  chmod    o+t    <directory name>	(to set the sticky bit permission on that directory)
+            \newline
+             ls   -ld	<directory name> 	   r w x r w x r w t	<directory name>	(where   't'  is called the sticky bit)
+
+
+    \bigskip
+    \bigskip
+
+    \item \textbf{What are the uses of passwd and shadow files?}
+    \newline
+    Ans. \textbf {Passwd file}:
+           \begin{enumerate}
+             \item When we create the user one entry is updated in password and shadow files.
+             \item It represents and tell about that user login name , uid, gid, default home directory of the use and default shell. 
+             \item So, using this file we can easily get users information.
+           \end{enumerate}
+        \textbf{Shadow file };
+          \begin{enumerate}
+             \item This file tells about the login id, user's encrypted password,  password when last changed,  min. days the password valid, max. days valid, warning days, inactive days and expiry days.
+             \item If shadow file is missed or deleted we can recover those entries of shadow file using password file.
+             \item We can change the users encrypted passwords with the permissions of the higher authorities in case of 	emergency.
+          \end{enumerate}  
+    
+    \bigskip
+    \bigskip
+
+    \item \textbf{What is the use of group?}
+    \newline
+    Ans.\begin{enumerate}
+          \item In an organization the whole work is divided into departments for easy maintenance and easy 
+          \item For each department is also represented as group and that group having so many users to do different works.
+          \item So, if we create one group and assign that group to all the users in that department, then we can easily identify which user belongs to which group.
+          \item We can share files, directories and execute some programs to that group and also give permissions to that 	group. So, each user of that group can easily share those directories and also can easily access, execute or even write in those shared files and directories.
+        \end{enumerate}
+    
+    \bigskip
+    \bigskip
+
+    \item \textbf{Can we login to the user without password?}
+    \newline
+    Ans.Yes, we can login.
+
+    \bigskip
+    \bigskip
+
+    \item \textbf{How to recover the root password if missed or deleted?}
+    \newline
+    Ans:\textbf{RHEL - 6 :}
+     \begin{enumerate}
+        \item Restart the system.
+        \item Select  1st  option and press  'e'.
+        \item Select 2nd option and press  'e'.
+        \item At the end give one blank space and type  1  and press Enter key.
+        \item  Then press  'b'  to boot the system in single user mode.
+        \item Then prompt appears and type    # passwd root    command.
+        \newline
+                              New password :  XXXXXX
+                              Retype password :  XXXXXX
+        \item Exit
+        \item Then system starts as usual
+     \end{enumerate}
+    \textbf{RHEL - 7 :}
+      \begin{enumerate}
+        \item Restart the system.
+        \item Using arrow keys select  1st line and  press  'e'  to edit.
+        \item Go to  \textbf{Linux 16 } line press End key  or  \textbf{Ctrl + e } to go to the end of the line and give one space.
+        \item Then type as   \textbf{rd.break   console=tty1   selinux=0}
+        \item Then press    Ctrl + x   to start the computer in single user mode.
+        \item After starting  we get \textbf{ swith_root :/ }  prompt appears and then type as follows.
+        \item \textbf{mount   -o   remount, rw    /sysroot }  and press Enter and then type as follows.
+        \item \textbf{chroot   /sysroot  }  press Enter
+        \item Then   \textbf{sh - 4.2 }  prompt appears and type as 
+        \item \textbf{sh - 4.2 passwd root}
+               New password :  XXXXXX
+               Retype password :  XXXXXX
+        \item \textbf{sh - 4.2 exit}
+        \item \textbf{switch-root :/exit}
+        \item Then the system starts and the desktop appears.
+      \end{enumerate}
+
+    \bigskip 
+    \bigskip
+
+    \item \textbf{How to restrict the users from login?}
+    \newline
+    Ans.\begin{enumerate}
+          \item  By removing (deleting) the user we can restrict the user from login.
+          \item Put the user's hostnames as entries in  \textbf{/etc/hosts.deny }   file (applying TCP wrappers).
+          \item \textbf{passwd   -l    <user name> } (by locking his password we can restrict the users).
+        \end{enumerate}
+    
+    \bigskip
+    \bigskip
+
+    \item \textbf{How to put never expiry to a user?}
+    \newline
+    Ans.passwd     -x    -1    <user login name>
+
+
+    
+
+    
+
+           
+       
+     
+    
+
+                    
+                         
+    
+
+
+
+
+
+
+
+
+        
+        
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+
+
+
         
 
     

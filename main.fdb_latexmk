@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1669713053 "c:/Users/Admin/Desktop/work/linux_interview_questions/main.tex" "main.pdf" "main" 1669713053
+["pdflatex"] 1669723611 "c:/Users/Admin/Desktop/work/linux_interview_questions/main.tex" "main.pdf" "main" 1669723611
   "C:/Users/Admin/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1669272909 82579 6dfd626a40d8527526d7a19ed8f15e62 ""
   "C:/Users/Admin/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1669272996 10804574 246597eb45f3a7fc92a103063acc2222 ""
   "C:/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc" 1458473887 4993 80dc9bab7f31fb78a000ccfed0e27cab ""
@@ -23,6 +23,8 @@
   "C:/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/tfm/public/mathpazo/zplmr7t.tfm" 1136752454 1828 bb8add3bd19426549f9267c88b0cb8bd ""
   "C:/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/tfm/public/mathpazo/zplmr7v.tfm" 1136752454 1012 955c4ca523d7827d33db91a33412b048 ""
   "C:/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/tfm/public/mathpazo/zplmr7y.tfm" 1136752454 1316 b4037e9c09961a72f8476628774e1ec1 ""
+  "C:/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1247596667 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
+  "C:/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1247596667 35752 024fb6c41858982481f6968b5fc26508 ""
   "C:/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1247596667 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "C:/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb" 1136833548 52406 dad2f72863a03727d5f536c64a69c452 ""
   "C:/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb" 1136833548 52665 661b1e6b26edb5f50dd491f8a701cb57 ""
@@ -74,9 +76,9 @@
   "C:/Users/Admin/AppData/Local/Programs/MiKTeX/tex/latex/tools/verbatim.sty" 1654690828 7392 6cb60c76983625ab7344d128dbcdd881 ""
   "C:/Users/Admin/AppData/Local/Programs/MiKTeX/tex/latex/tools/xspace.sty" 1654690828 4545 4c279ac9292a1be8afa9ab2f1d3299c2 ""
   "c:/Users/Admin/Desktop/work/linux_interview_questions/main.tex" 1669619753 1197 a4a50915044ed7b6d48bac82042bace6 ""
-  "main.aux" 1669713053 34 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "main.aux" 1669723611 34 3985256e7290058c681f74d7a3565a19 "pdflatex"
   "main.tex" 1669619753 1197 a4a50915044ed7b6d48bac82042bace6 ""
-  "page1_10.tex" 1669713045 17625 aebac51df8af6480b0138a7ffa732db6 ""
+  "page1_10.tex" 1669723601 39117 699f015a7e4710ba9e27a04a6cf959a0 ""
   (generated)
   "main.aux"
   "main.log"

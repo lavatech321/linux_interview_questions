@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.24)  29 NOV 2022 14:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.24)  29 NOV 2022 17:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -692,51 +692,544 @@ Overfull \hbox (0.68616pt too wide) in paragraph at lines 356--366
 []\T1/pplx/b/n/10 How to gi-ve dif-fe-rent su-do per-mis-si-ons to nor-mal users? 
  []
 
-[12]
+[12] [13]
+page1_10.tex:379: Missing $ inserted.
+<inserted text> 
+                $
+l.379           \item Cmnd_
+                           Alias	NETWORKING=/usr/sbin/route,	  /usr/sbin/ifc...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
 
-page1_10.tex:407: LaTeX Error: \begin{itemize} on input line 366 ended by \end{enumerate}.
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.407 \end{enumerate}
-                     
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-)
-
-c:/Users/Admin/Desktop/work/linux_interview_questions/main.tex:54: LaTeX Error: \begin{enumerate} on input line 3 ended by \end{document}.
+page1_10.tex:380: LaTeX Error: Command \item invalid in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.54 \end{document}
-                   
+l.380           \item
+                      <user name>	<machines>=<command alias name>
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+page1_10.tex:380: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.380           \item <
+                       user name>	<machines>=<command alias name>
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+page1_10.tex:380: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.380           \item <
+                       user name>	<machines>=<command alias name>
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+page1_10.tex:383: LaTeX Error: Command \item invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.383           \item
+                      We can also create one user alias and add the users to...
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+page1_10.tex:383: Missing $ inserted.
+<inserted text> 
+                $
+l.383           \item W
+                       e can also create one user alias and add the users to...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+page1_10.tex:383: Missing } inserted.
+<inserted text> 
+                }
+l.383           \item W
+                       e can also create one user alias and add the users to...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (81.78029pt too wide) in paragraph at lines 379--383
+[]\T1/pplx/m/n/10 Cmnd$[]\OML/zplm/m/it/10 liasNETWORKING \OT1/zplm/m/n/10 = /\OML/zplm/m/it/10 usr\OT1/zplm/m/n/10 /\OML/zplm/m/it/10 sbin\OT1/zplm/m/n/10 /\OML/zplm/m/it/10 route\OT1/pplx/m/n/10 , \OT1/zplm/m/n/10 /\OML/zplm/m/it/10 usr\OT1/zplm/m/n/10 /\OML/zplm/m/it/10 sbin\OT1/zplm/m/n/10 /\OML/zplm/m/it/10 ifconfig <
+ []
+
+page1_10.tex:383: Extra }, or forgotten \endgroup.
+\par ...m \@noitemerr {\@@par }\fi \else {\@@par }
+                                                  \fi 
+l.383           \item W
+                       e can also create one user alias and add the users to...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+page1_10.tex:384: Missing $ inserted.
+<inserted text> 
+                $
+l.384           \item User_
+                           Alias	<user alias name>=<user1>, <user2>, <user3>,
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+page1_10.tex:385: LaTeX Error: Command \item invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.385           \item
+                      \textbf{Example}:User_Alias	OURTEAM=raju, shyam, ram, ...
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+page1_10.tex:385: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.385           \item \textbf
+                             {Example}:User_Alias	OURTEAM=raju, shyam, ram, ...
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+page1_10.tex:385: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.385           \item \textbf
+                             {Example}:User_Alias	OURTEAM=raju, shyam, ram, ...
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+page1_10.tex:386: LaTeX Error: Command \item invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.386           \item
+                      OURTEAM	ALL=ALL (to give all permissions of sudo)
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+page1_10.tex:386: Missing $ inserted.
+<inserted text> 
+                $
+l.386           \item O
+                       URTEAM	ALL=ALL (to give all permissions of sudo)
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+page1_10.tex:386: Missing } inserted.
+<inserted text> 
+                }
+l.386           \item O
+                       URTEAM	ALL=ALL (to give all permissions of sudo)
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (1.3237pt too wide) in paragraph at lines 384--386
+[]\T1/pplx/m/n/10 User$[]\OML/zplm/m/it/10 lias < useraliasname >\OT1/zplm/m/n/10 =\OML/zplm/m/it/10 < user\OT1/pplx/m/n/10 1 \OML/zplm/m/it/10 >\OT1/pplx/m/n/10 , \OML/zplm/m/it/10 < user\OT1/pplx/m/n/10 2 \OML/zplm/m/it/10 >\OT1/pplx/m/n/10 , \OML/zplm/m/it/10 < user\OT1/pplx/m/n/10 3 \OML/zplm/m/it/10 >
+ []
+
+page1_10.tex:386: Extra }, or forgotten \endgroup.
+\par ...m \@noitemerr {\@@par }\fi \else {\@@par }
+                                                  \fi 
+l.386           \item O
+                       URTEAM	ALL=ALL (to give all permissions of sudo)
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+page1_10.tex:387: Missing $ inserted.
+<inserted text> 
+                $
+l.387           \item Defaults  timestamp_
+                                          timeout=0 (whenever the sudo user ...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+page1_10.tex:388: LaTeX Error: Command \item invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.388           \item
+                      The above will apply to all users including root also....
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+page1_10.tex:388: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.388           \item T
+                       he above will apply to all users including root also....
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+page1_10.tex:388: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.388           \item T
+                       he above will apply to all users including root also....
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+page1_10.tex:389: LaTeX Error: Command \item invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.389           \item
+                      Defaults  :  <user1>, <user2>, <user3>  timestamp_time...
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+page1_10.tex:389: Missing $ inserted.
+<inserted text> 
+                $
+l.389           \item D
+                       efaults  :  <user1>, <user2>, <user3>  timestamp_time...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+page1_10.tex:389: Missing } inserted.
+<inserted text> 
+                }
+l.389           \item D
+                       efaults  :  <user1>, <user2>, <user3>  timestamp_time...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (613.25114pt too wide) in paragraph at lines 387--389
+[]\T1/pplx/m/n/10 Defaults timestamp$[]\OML/zplm/m/it/10 imeout \OT1/zplm/m/n/10 = \OT1/pplx/m/n/10 0\OT1/zplm/m/n/10 (\OML/zplm/m/it/10 wheneverthesudouserexecutesanycommandthenitwillaskpasswordeverycommand\OT1/zplm/m/n/10 )\OML/zplm/m/it/10 Theabovewillapplytoallusersincludingrootalso\OT1/pplx/m/n/10 .\OML/zplm/m/it/10 Ifwewanttomakeitasonlyfornormalusers\OT1/pplx/m/n/10 , \OML/zplm/m/it/10 then[][]$ 
+ []
+
+page1_10.tex:389: Extra }, or forgotten \endgroup.
+\par ...m \@noitemerr {\@@par }\fi \else {\@@par }
+                                                  \fi 
+l.389           \item D
+                       efaults  :  <user1>, <user2>, <user3>  timestamp_time...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+page1_10.tex:389: Missing $ inserted.
+<inserted text> 
+                $
+l.389 ... :  <user1>, <user2>, <user3>  timestamp_
+                                                  timeout=0 (the system will...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+page1_10.tex:390: LaTeX Error: Command \end{itemize} invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.390        \end{itemize}
+                          
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+page1_10.tex:390: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.390        \end{itemize}
+                          
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+page1_10.tex:390: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.390        \end{itemize}
+                          
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+page1_10.tex:390: Missing $ inserted.
+<inserted text> 
+                $
+l.390        \end{itemize}
+                          
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (73.32672pt too wide) in paragraph at lines 389--391
+\OT1/pplx/m/n/10 0\OT1/zplm/m/n/10 (\OML/zplm/m/it/10 thesystemwillaskpasswordsforuser\OT1/pplx/m/n/10 1, \OML/zplm/m/it/10 user\OT1/pplx/m/n/10 2, \OML/zplm/m/it/10 user\OT1/pplx/m/n/10 3\OML/zplm/m/it/10 toexecutesudocommands\OT1/zplm/m/n/10 )$ 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 395--397
+
+ []
+
+
+Overfull \hbox (2.276pt too wide) in paragraph at lines 398--399
+\T1/pplx/b/n/10 /var/lo-g/-se-cu-re\T1/pplx/m/n/10 file to ma-ke a re-cord of su-do user com-
+ []
+
+[14]
+
+page1_10.tex:416: LaTeX Error: Unicode character ⦁ (U+2981)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.416         \item ⦁
+                       	Retype password :(retype the password again)
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+page1_10.tex:418: LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.418     \newline
+                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-[13] (main.aux) )
-(\end occurred inside a group at level 1)
+[15] [16]
+page1_10.tex:454: Misplaced alignment tab character &.
+l.454 ... as follows to make history i size date &
+                                                   time 	 formats permanently)
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
 
-### semi simple group (level 1) entered at line 3 (\begingroup)
-### bottom level 
+[17] [18] [19]
+Overfull \hbox (2.25597pt too wide) in paragraph at lines 528--532
+\T1/pplx/m/n/10 per-mis-si-ons the syn-tax is, chmod <who> <what> <which>
+ []
+
+[20]
+Underfull \hbox (badness 10000) in paragraph at lines 577--581
+
+ []
+
+[21] [22] [23]
+page1_10.tex:620: You can't use `macro parameter character #' in horizontal mode.
+l.620             \item \textbf{Example :}   #
+                                               chmod    u+s    /usr/sbin/ini...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:620: You can't use `macro parameter character #' in horizontal mode.
+l.620 ...start the system using this command 	   #
+                                                  init 6)
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+[24]
+Overfull \hbox (3.726pt too wide) in paragraph at lines 659--660
+\T1/pplx/m/n/10 uid, gid, default ho-me di-rec-to-ry of the use and default
+ []
+
+[25]
+page1_10.tex:700: You can't use `macro parameter character #' in horizontal mode.
+l.700 ...  \item Then prompt appears and type    #
+                                                   passwd root    command.
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+Overfull \hbox (4.8053pt too wide) in paragraph at lines 700--704
+\T1/pplx/m/n/10 New pass-word : XXXXXX Re-ty-pe pass-word : XXXXXX 
+ []
+
+[26]
+page1_10.tex:714: Missing $ inserted.
+<inserted text> 
+                $
+l.714 ...starting  we get \textbf{ swith_root :/ }
+                                                    prompt appears and then ...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+page1_10.tex:714: Extra }, or forgotten $.
+<recently read> \egroup 
+                        
+l.714 ...starting  we get \textbf{ swith_root :/ }
+                                                    prompt appears and then ...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+page1_10.tex:715: LaTeX Error: Command \item invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.715         \item
+                    \textbf{mount   -o   remount, rw    /sysroot }  and pres...
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+page1_10.tex:715: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.715         \item \textbf
+                           {mount   -o   remount, rw    /sysroot }  and pres...
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+page1_10.tex:715: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.715         \item \textbf
+                           {mount   -o   remount, rw    /sysroot }  and pres...
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+page1_10.tex:716: LaTeX Error: Command \item invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.716         \item
+                    \textbf{chroot   /sysroot  }  press Enter
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+page1_10.tex:716: Missing $ inserted.
+<inserted text> 
+                $
+l.716         \item \textbf
+                           {chroot   /sysroot  }  press Enter
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+page1_10.tex:716: Missing } inserted.
+<inserted text> 
+                }
+l.716         \item \textbf
+                           {chroot   /sysroot  }  press Enter
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (385.75443pt too wide) in paragraph at lines 714--716
+[]\T1/pplx/m/n/10 After star-ting we get  \T1/pplx/b/n/10 swith$[]\OML/zplm/m/it/10 oot \OT1/zplm/m/n/10 : /\OML/zplm/m/it/10 promptappearsandthentypeasfollows\OT1/pplx/m/n/10 .[]\OML/zplm/m/it/10 andpressEnterandthentypeasfollows\OT1/pplx/m/n/10 .[][]$ 
+ []
+
+[27]
+Overfull \hbox (0.74594pt too wide) in paragraph at lines 733--734
+[]\T1/pplx/m/n/10 Put the user's host-na-mes as ent-ries in \T1/pplx/b/n/10 /et-c/hosts.deny
+ []
+
+) [28] (main.aux) ) 
 Here is how much of TeX's memory you used:
- 7611 strings out of 475285
- 147868 string characters out of 2774119
- 662209 words of memory out of 3000000
- 29015 multiletter control sequences out of 15000+600000
+ 7616 strings out of 475285
+ 147926 string characters out of 2774119
+ 663209 words of memory out of 3000000
+ 29020 multiletter control sequences out of 15000+600000
  495228 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,8n,106p,10653b,335s stack positions out of 10000i,1000n,20000p,200000b,80000s
-{C:/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb><C:/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (13 pages, 84629 bytes).
+{C:/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb><C:/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on main.pdf (28 pages, 128603 bytes).
 PDF statistics:
- 66 PDF objects out of 1000 (max. 8388607)
+ 123 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
