@@ -78,7 +78,7 @@
 	    \item \textbf{/etc/shadow}: Stores the /etc/shadow  file backup copy.
 	    \item \textbf{/etc/default/useradd}: Whenever the user created user's default settings taken from this file.
 	    \item \textbf{/etc/login.defs}: user's login defaults settings information taken from this file.
-	    \item \textbf{/etc/skell}   ------> Stores user's all environmental variables files and these are copied from this directory to user's home directory
+	    \item \textbf{/etc/skell}: Stores user's all environmental variables files and these are copied from this directory to user's home directory
     \end{itemize}
 
     \bigskip
@@ -152,32 +152,255 @@
     
     \item\textbf{How to verify or check the integrity of the password file?}
     \newline
-    \begin{itemize}
-        \item Ans.pwck   <options>   /etc/passwd    or
-        \item pwck   <options>   /etc/shadow 
-        \item The options are,   -q :quiet
-              r : read only	
-              s : sort the contents by uidin /etc/passwd and  /etc/shadow  files
-    \end{itemize}
+     Ans.\textbf{pwck}  <options>   /etc/passwd    or
+    \newline
+        \textbf{pwck} <options>   /etc/shadow 
+        The options are,  \begin{itemize}
+                            \item \textbf{-q} :quiet
+                            \item \textbf{r }: read only	
+                            \item \textbf{s }: sort the contents by uidin /etc/passwd and  /etc/shadow  files
+                          \end{itemize}
 
     \bigskip
     \bigskip
 
     \item\textbf{How to verify or check the integrity of the group file?}
-    \newline
-    \begin{itemize}
+     \begin{itemize}
         \item grpck   <options>   /etc/group    or
         \item grpck   <options>   /etc/gshadow 
-        \item The options are,    -r:read only
-                                  -s:sort the contents by  \textbf{gidin  /etc/group   and   /etc/gshadow files.}
-    
+        \item The options are,    \textbf{-r}-r:read only
+                                  \textbf{-s}:sort the contents by  \textbf{gidin  /etc/group   and   /etc/gshadow files.}
+     \end{itemize}
+
     \bigskip  
     \bigskip
     
-    \item\textbf{}
+    \item\textbf{What is syntax of the usermod command with full options?}
+    \newline
+    Ans. usermod   <options><user name>
+        The options are,        \begin{itemize}
+                                  \item  -L:lock the password
+                                  \item -U : unlock the password
+                                  \item -o :creates duplicate user modify the user's  id  same as other user
+                                  \item -u :modify user id
+                                  \item -g : modify group id
+                                  \item -G : modify   or  add  the  secondary group
+                                  \item -c : modify comment
+                                  \item -d : modify home directory
+                                  \item -s : modify user's login shell
+                                  \item -l : modify user's login name
+                                  \item -md :modify the users home directory and the old home directory 
+                                \end{itemize}
+    \bigskip
+    \bigskip
+
+    \item\textbf{How to create the duplicate root user?}
+    \newline
+    Ans.useradd   -o   -u   0   -g   root    <user name>
+
+    \bigskip
+    \bigskip
+
+    \item\textbf{How to recover if the user deleted by mistake?}
+    \newline
+    Ans.\textbf{pwunconv}	(It creates the users according  \textbf{/etc/passwd}  file and deletes the  \textbf{/etc/shadow   file)}
+
+    \bigskip
+    \bigskip
+     
+    \item\textbf{What are the uses of  .bash\_logout,.bash\_profile and .bashrc   files?}
+    \newline
+      \begin{enumerate}
+        Ans.\item\textbf{.bash\_logout} :is a user's logout ending program file. It will execute first whenever the user is logout.
+        \item\textbf{.bash_profile} :is user's login startup program file. It will execute first whenever the user is login. It consists 	 the user's environmental variables. 
+        \item\textbf{bashrc} :This file is used to create the user's custom commands and to specify the umask values for that user's  only.
+       \end{enumerate}
+
+    \bigskip
+    \bigskip
+
+    \item\textbf{What is a group?}
+    \newline
+    Ans.The collection of users is called a group. There are two types of groups.
+     \begin{enumerate}
+          \item\textbf{Primary group} : It will be created automatically whenever the user is created. User belongs to on group is called a  primary group.
+          \item\textbf{Secondary group} :  It will not create automatically. The admin user should be created manually and users belongs to more than one group is called secondary group. A user can be assigned to max. 16 groups. ie., 1 primary group and 15 secondary groups.
+     \end{enumerate}
+
+    \bigskip
+    \bigskip
+
+    \item\textbf{What is the command to check the user belongs to how many groups?}
+    \newline
+    Ans. groups     <user name>
+
+     \bigskip
+     \bigskip
+
+    \item\textbf{What is the syntax to create the group?}
+    \newline
+    Ans.\textbf{groupadd}<options><group name>
+    The options are,\begin{itemize}
+                       \item -f :add the group forcefully
+                       \item -g : group id no.
+                       \item -o :non-unique  (duplicate group id)
+                       \item -p : group password
+                       \item -r : system group
+                       \item -R : root group  
+                    \end{itemize}
+
+    \bigskip
+    \bigskip
+    
+    \item\textbf{What is the syntax to modify the group?}
+    \newline
+    Ans.The options are,\begin{itemize}
+                          \item -g : group id
+                          \item-n :new name for existing one, ie., rename the group
+                          \item-o : non-unique  (duplicate group id)
+                          \item-p : group passwd
+                          \item-R :root group
+                        \end{itemize}
+
+    \bigskip
+    \bigskip
+
+    \item\textbf{What is syntax to delete the group?}  
+    \newline
+      \begin{itemize}
+        \item \textbf{groupdel}    <group name>	(to delete the group without options)
+        \item \textbf{groupdel}   <group name>	(to delete the group without options)
+       \end{itemize}
+       
+    \bigskip
+    \bigskip
+    
+    \item\textbf{How to assign the password to the group?}
+    \newline
+    Ans.\textbf{gpasswd} <group name>	(to assign a password to the group without any options).
+        \textbf{gpasswd}    <options><group name>
+        The options are,            \begin{itemize}
+             	                      \item -a :  add users to the group
+				       	              \item -d :  delete the user from the group
+					                  \item -r :  remove the group password
+					                  \item -R :  restrict to access that group
+					                  \item -A : set the list of Administrative users
+					                  \item -M :  set the list of group members
+                                    \end{itemize}
+
+    \bigskip
+    \bigskip
+
+    \item\textbf{How to check the integrity or consistency of the group?}
+    \newline
+    Ans.grpck	(it will check the integrity or consistency in  \textbf{/etc/gpasswd }  and   /etc/gshadow   files).
+
+    \bigskip
+    \bigskip
+
+    \item\textbf{How to restore  /etc/gshadow file if deleted by mistake?}
+    \newline
+    Ans. grpconv	(it creates the  \textbf{/etc/gshadow}  file  from   \textbf{/etc/group}   file)
+    
+    \bigskip
+    \bigskip
+
+    \item\textbf{How to change the password aging policies?}
+    \newline
+    Ans.we can change the password policies in 2 ways(I.e configuration file and Chage Command)
+        (i)  First  open the  /etc/login.defs   file and modify the current values
+        \newline
+        \textbf{Example} :vim /etc/login.defs
+           \begin{itemize}
+             \item min - 0:means the user can change the password to any no. of times.
+             \item min  -2: means the user can change the password within 2 days. ie., he can change the password after 2 days.
+             \item max - 5:  means the user should change the password before or after 5 days. Otherwise the password will be expired after 5 days.
+             \item inactive - 2 :means after password expiry date the grace period another 2 days will be given to change the password.
+             \item warning - 7 : means a warning will be given to the user about the password expiry 7 days before expiry date. 
+           \end{itemize}
+        (ii)  second by executing the   # chage  command.
+        \newline
+        \textbf{Example} : chage   <options><user name>
+        The options are     \begin{itemize}
+                               \item -d : last day
+                               \item -E : expiry date
+                               \item -I : inactive days
+                               \item -l :  list all the policies
+                               \item -m :  min. days
+                               \item-M  : max. days
+                               \item-w  : warning days
+                            \end{itemize}
+         Note :Whenever we \textbf{change} the password aging policy using  chage   command, the information is will be modified in   /etc/shadow   file.
+
+    \bigskip
+    \bigskip
+
+    \item\textbf{How add 45 days to the current system date?}
+    \newline
+    Ans. date   -d    "+  45 days"
+   
+    \bigskip
+    \bigskip
+
+    \item\textbf{Explain the sudo user?}
+    \newline
+    Ans.Sudoers (nothing but sudo users) allows particular users to run various root user commands without needing a root password. 
+    \textbf{/etc/sudoers} is the configuration file for sudoers to configure the normal user as privileged user.
+    It is not recommended to open this file using \textbf{vim }   editor because this editor cannot check the syntax by default and whatever we typed in that file that will blindly save in this file.
+    So, one editor is specially available for opening this file, i.e.,\textbf{visudo}and all normal users cannot execute this command. Only root user can run this command.
+    Once this file is opened nobody can open this file again on another terminal because \textbf{"The file is busy"}message is displayed on the terminal for security reasons.
+    
+    \bigskip
+    \bigskip
+
+    \item\textbf{How to give different  sudo permissions to normal users?}
+    \newline
+    Ans.Open the \textbf{/etc/sudoers} file by executing    #visudo    command and go to line no. 98 and type as 
+    \textbf{<User name>	<Machine>=	<Command>root
+           \newline
+            ALL=(ALL)	        ALL
+            \newline
+	         raju		      All=		        ALL}Save and exit this file.
+            \newline
+    Note :  When we trying to save this file if any syntax errors in this file, those errors are displayed with line no's and \textbf{What you do ?} (will be displayed, here press  'e'  to edit this file and modify those errors or mistakes and save this file.
+       \begin{itemize}
+          \item su -  raju	(to switch to raju user)
+          \item sudo   useradd   <useradd>	(The normal user raju can also add the users to the system)
+          \item 	We can assign sudo permissions to  'n'  no. of users by specifying names separated by commas ( , ) or line by   line.
+          \item	Instead of giving all permissions to normal user we can give only some commands.
+          
+        
+
+    
 
 
-    \end{itemize}
+
+
+
+
+
+
+
+
+
+
+
+
+     
+
+                     
+
+
+ 
+
+
+    
+
+
+    
+
+
+    
 
 
 
