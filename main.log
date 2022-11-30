@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.24)  29 NOV 2022 17:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.24)  30 NOV 2022 17:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1217,19 +1217,692 @@ Overfull \hbox (0.74594pt too wide) in paragraph at lines 733--734
 []\T1/pplx/m/n/10 Put the user's host-na-mes as ent-ries in \T1/pplx/b/n/10 /et-c/hosts.deny
  []
 
-) [28] (main.aux) ) 
+[28]
+Overfull \hbox (2.13596pt too wide) in paragraph at lines 807--808
+[]\T1/pplx/m/n/10 Format the abo-ve par-ti-ti-on with ext4 fi-le sys-tem using
+ []
+
+[29]
+page1_10.tex:810: Extra }, or forgotten \endgroup.
+l.810 ...pen this file and make an entry as below}
+                                                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+Overfull \hbox (2.96593pt too wide) in paragraph at lines 831--834
+\T1/pplx/m/n/10 Ans.setfacl <op-ti-ons><argument> : <user-na-me>: <per-mis-
+ []
+
+[30]
+Overfull \hbox (14.66595pt too wide) in paragraph at lines 858--863
+\T1/pplx/m/n/10 na-me> : <per-mis-si-ons>, o : <user na-me> : <per-mis-si-ons><file
+ []
+
+[31]
+Underfull \hbox (badness 10000) in paragraph at lines 871--875
+
+ []
+
+page1_10.tex:876: Missing $ inserted.
+<inserted text> 
+                $
+l.876 ...uth Modify as follows: auth required pam_
+                                                  tally.so no_magic_root acc...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+page1_10.tex:877: LaTeX Error: Command \item invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.877       \item
+                 \textbf{deny=3 }: Deny access if tally for this user excee...
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+page1_10.tex:877: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.877       \item\textbf
+                        {deny=3 }: Deny access if tally for this user excee...
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+page1_10.tex:877: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.877       \item\textbf
+                        {deny=3 }: Deny access if tally for this user excee...
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+page1_10.tex:877: Extra }, or forgotten $.
+l.877 ...s if tally for this user exceeds 3 times}
+                                                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+page1_10.tex:878: LaTeX Error: Command \item invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.878       \item
+                 \textbf{lock\_time=180 }: Always deny for 180 seconds afte...
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+page1_10.tex:878: Missing $ inserted.
+<inserted text> 
+                $
+l.878       \item\textbf
+                        {lock\_time=180 }: Always deny for 180 seconds afte...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+page1_10.tex:878: Missing } inserted.
+<inserted text> 
+                }
+l.878       \item\textbf
+                        {lock\_time=180 }: Always deny for 180 seconds afte...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (59.60205pt too wide) in paragraph at lines 876--878
+\T1/pplx/m/n/10 re-qui-red pam$[]\OML/zplm/m/it/10 ally\OT1/pplx/m/n/10 .\OML/zplm/m/it/10 sono[]agic[]ootaccountrequiredpam[]ally\OT1/pplx/m/n/10 .\OML/zplm/m/it/10 sodeny \OT1/zplm/m/n/10 =
+ []
+
+
+Overfull \hbox (119.2438pt too wide) in paragraph at lines 876--878
+\OT1/pplx/m/n/10 3\OML/zplm/m/it/10 no[]agic[]ootlock[]ime \OT1/zplm/m/n/10 = \OT1/pplx/m/n/10 180[] \OT1/zplm/m/n/10 : \OML/zplm/m/it/10 Denyaccessiftallyforthisuserexceeds\OT1/pplx/m/n/10 3\OML/zplm/m/it/10 times[][]$ 
+ []
+
+page1_10.tex:878: Extra }, or forgotten \endgroup.
+\par ...m \@noitemerr {\@@par }\fi \else {\@@par }
+                                                  \fi 
+l.878       \item\textbf
+                        {lock\_time=180 }: Always deny for 180 seconds afte...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+page1_10.tex:879: Missing $ inserted.
+<inserted text> 
+                $
+l.879       \item alsounlock_
+                             time=n option. It allow access after n seconds...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+page1_10.tex:880: LaTeX Error: Command \item invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.880       \item
+                  \textbf{magic\_root }: If the module is invoked by a user...
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+page1_10.tex:880: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.880       \item \textbf
+                         {magic\_root }: If the module is invoked by a user...
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+page1_10.tex:880: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.880       \item \textbf
+                         {magic\_root }: If the module is invoked by a user...
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+page1_10.tex:881: LaTeX Error: Command \item invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.881       \item
+                  no_magic\_root : Avoid root account locking, if the modul...
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+page1_10.tex:881: Missing $ inserted.
+<inserted text> 
+                $
+l.881       \item n
+                   o_magic\_root : Avoid root account locking, if the modul...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+page1_10.tex:881: Missing } inserted.
+<inserted text> 
+                }
+l.881       \item n
+                   o_magic\_root : Avoid root account locking, if the modul...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (1039.20741pt too wide) in paragraph at lines 879--881
+[]\T1/pplx/m/n/10 alsounlock$[]\OML/zplm/m/it/10 ime \OT1/zplm/m/n/10 = \OML/zplm/m/it/10 n option\OT1/pplx/m/n/10 .\OML/zplm/m/it/10 Itallowaccessafternsecondsafterfailedattempt\OT1/pplx/m/n/10 .\OML/zplm/m/it/10 Ifthisoptionisusedtheuserwillbelockedoutforthespecifiedamountoftimeafterheexceededhismaximumallowedattempts\OT1/pplx/m/n/10 .\OML/zplm/m/it/10 Otherwisetheaccountislockeduntilthelockisremovedbyamanualinterventionofthesystemadministrator\OT1/pplx/m/n/10 .[] \OT1/zplm/m/n/10 :
+ []
+
+
+Overfull \hbox (60.66724pt too wide) in paragraph at lines 879--881
+\OML/zplm/m/it/10 Ifthemoduleisinvokedbyauserwithuid \OT1/zplm/m/n/10 = \OT1/pplx/m/n/10 0\OML/zplm/m/it/10 thecounterisnotincremented\OT1/pplx/m/n/10 .\OML/zplm/m/it/10 Thesys \OMS/zplm/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (114.32558pt too wide) in paragraph at lines 879--881
+\OML/zplm/m/it/10 adminshouldusethisforuserlaunchedservices\OT1/pplx/m/n/10 , \OML/zplm/m/it/10 likesu\OT1/pplx/m/n/10 , \OML/zplm/m/it/10 otherwisethisargumentshouldbeomitted\OT1/pplx/m/n/10 .[][]$ 
+ []
+
+page1_10.tex:881: Extra }, or forgotten \endgroup.
+\par ...m \@noitemerr {\@@par }\fi \else {\@@par }
+                                                  \fi 
+l.881       \item n
+                   o_magic\_root : Avoid root account locking, if the modul...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+page1_10.tex:881: Missing $ inserted.
+<inserted text> 
+                $
+l.881       \item no_
+                     magic\_root : Avoid root account locking, if the modul...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+page1_10.tex:882: LaTeX Error: Command \end{itemize} invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.882     \end{itemize}
+                       
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+page1_10.tex:882: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.882     \end{itemize}
+                       
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+page1_10.tex:882: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.882     \end{itemize}
+                       
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+page1_10.tex:882: Missing $ inserted.
+<inserted text> 
+                $
+l.882     \end{itemize}
+                       
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (95.66507pt too wide) in paragraph at lines 881--883
+[]\T1/pplx/m/n/10 no$[]\OML/zplm/m/it/10 agic[]root  \OT1/zplm/m/n/10 : \OML/zplm/m/it/10 Avoidrootaccountlocking\OT1/pplx/m/n/10 , \OML/zplm/m/it/10 ifthemoduleisinvokedbyauserwithuid \OT1/zplm/m/n/10 =
+ []
+
+[32] [33]
+page1_10.tex:925: You can't use `macro parameter character #' in horizontal mode.
+l.925 ...em Update the quota  on mount point by  #
+                                                   \textbf{mount   -o   remo...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:926: You can't use `macro parameter character #' in horizontal mode.
+l.926 ...item Create the user quota database by  #
+                                                   quotacheck     -cu    <mo...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:927: You can't use `macro parameter character #' in horizontal mode.
+l.927 ...her the quota is applied  or  not  by   #
+                                                   mount    command.
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:928: You can't use `macro parameter character #' in horizontal mode.
+l.928            \item Enable the quota  by   #
+                                                quotaon     <mount point>   ...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:942: You can't use `macro parameter character #' in horizontal mode.
+l.942 ...Ans.Apply the user quota for a user by  #
+                                                   edquota   -eu    <user na...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+[34]
+page1_10.tex:949: You can't use `macro parameter character #' in horizontal mode.
+l.949 ...So, we can change the grace period by   #
+                                                  edquota    -t    command, ...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+page1_10.tex:951: LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.951       \newline
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+page1_10.tex:960: You can't use `macro parameter character #' in horizontal mode.
+<argument> /etc/fstab file by ##
+                                 vim /etc/fstab 
+l.960 ...etc/fstab   file by  # vim  /etc/fstab  }
+                                                   command  and  goto the mo...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+Overfull \hbox (27.23595pt too wide) in paragraph at lines 960--962
+\T1/pplx/m/n/10 and go-to the mount point ent-ry li-ne and ty-pe as,/dev/sdb1
+ []
+
+
+Overfull \hbox (3.37613pt too wide) in paragraph at lines 962--963
+\T1/pplx/b/n/10 mount, us-r-quo-ta, grpquo-ta <mount point>\T1/pplx/m/n/10 command 
+ []
+
+
+Overfull \hbox (3.70595pt too wide) in paragraph at lines 963--965
+\T1/pplx/m/n/10 the quo-ta da-ta-ba-se, -u means user quo-ta and -g means
+ []
+
+[35]
+page1_10.tex:966: You can't use `macro parameter character #' in horizontal mode.
+l.966           \item Enable the quota  by   #
+                                               quotaon  \textbf{ <mount poin...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+Overfull \hbox (1.796pt too wide) in paragraph at lines 967--968
+[]\T1/pplx/m/n/10 Apply the user quo-ta for a user by \T1/pplx/b/n/10 ed-quo-ta -g <group
+ []
+
+Runaway argument?
+{{enumerate} \begin {itemize} \item blocks: No. of blocks used (alrea\ETC.
+page1_10.tex:981: Paragraph ended before \end  was complete.
+<to be read again> 
+                   \par 
+l.981 
+      
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+
+Overfull \hbox (2.27591pt too wide) in paragraph at lines 985--988
+\T1/pplx/m/n/10 Ans.chpasswd :(to change mul-ti-ple user's pass-words) 
+ []
+
+[36]
+Overfull \hbox (0.59526pt too wide) in paragraph at lines 1036--1040
+\T1/pplx/m/n/10 Ans.The first sec-tor of the O/S disk con-tains the MBR
+ []
+
+[37] [38]
+Overfull \hbox (12.20593pt too wide) in paragraph at lines 1081--1082
+[]\T1/pplx/m/n/10 The iso9660 fi-le sys-tem is used to read CD/DVD.iso
+ []
+
+[39]
+page1_10.tex:1118: You can't use `macro parameter character #' in horizontal mode.
+l.1118 	#
+          mount   -a  (permanent mount)
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+Overfull \hbox (13.706pt too wide) in paragraph at lines 1111--1119
+\T1/pplx/m/n/10 Ans.mkdir /m-nt/oracle mount /de-v/sdc1 /m-nt/oracle
+ []
+
+[40]
+page1_10.tex:1139: You can't use `macro parameter character #' in horizontal mode.
+l.1139       Example:#
+                       mount   <options><device name><directory name (mount ...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1144: You can't use `macro parameter character #' in horizontal mode.
+l.1144     #
+             mount   -a          to mount the partitions without reboot)
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+[41]
+Overfull \hbox (5.23592pt too wide) in paragraph at lines 1153--1154
+\T1/pplx/m/n/10 mount point per-ma-nent then ma-ke an ent-ry about
+ []
+
+page1_10.tex:1174: You can't use `macro parameter character #' in horizontal mode.
+l.1174 ...y and trying to unmount it, check with #
+                                                   pwdcommand.
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+Overfull \hbox (8.55591pt too wide) in paragraph at lines 1172--1176
+\T1/pplx/m/n/10 Ans.Some ti-mes di-rec-to-ry re-flects er-ror whi-le un-moun-
+ []
+
+[42]
+page1_10.tex:1181: You can't use `macro parameter character #' in horizontal mode.
+l.1181 ... we can unmount that partition using   #
+                                                   umount     <mount point>
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1210: You can't use `macro parameter character #' in horizontal mode.
+l.1210   Example :    #
+                        e2label  /dev/sdb1  oradisk      (to assign oradisk ...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1211: You can't use `macro parameter character #' in horizontal mode.
+l.1211 	#
+          mount   -l       (to list all the mounted partitions along with th...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+[43]
+page1_10.tex:1218: You can't use `macro parameter character #' in horizontal mode.
+l.1218 ... LABEL=<label name><mount point> ex :  #
+                                                   mount   LABEL=oradisk    ...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1219: You can't use `macro parameter character #' in horizontal mode.
+l.1219     #
+             vim  /etc/fstab
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1222: You can't use `macro parameter character #' in horizontal mode.
+l.1222     #
+             mount    -a       (to mount the partitions)
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1223: You can't use `macro parameter character #' in horizontal mode.
+l.1223     #
+             mount	(to verify whether it is mounted or not)
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+Overfull \hbox (4.22615pt too wide) in paragraph at lines 1216--1224
+[]\T1/pplx/b/n/10 How to mount a par-ti-ti-on tem-po-ra-ri-ly or per-manent-
+ []
+
+page1_10.tex:1231: You can't use `macro parameter character #' in horizontal mode.
+l.1231 	 Example :  #
+                     blkid   /dev/sdb2       (to see the UUID or block id of...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1233: You can't use `macro parameter character #' in horizontal mode.
+l.1233 	 Example:  #
+                     vim /etc/fstab
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+Overfull \hbox (1.82605pt too wide) in paragraph at lines 1228--1236
+\T1/pplx/m/n/10 that. Ex-am-ple:  vim /et-c/f-stab UUID="......................./
+ []
+
+[44]
+page1_10.tex:1256: You can't use `macro parameter character #' in horizontal mode.
+l.1256         \item Example:  #
+                                 fdisk   /dev/sdb
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+[45]
+page1_10.tex:1266: You can't use `macro parameter character #' in horizontal mode.
+l.1266         \item Example :  #
+                                  mkswap   /dev/sdb2        (to format the /...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1268: You can't use `macro parameter character #' in horizontal mode.
+l.1268         \item Example :  #
+                                  swapon   /dev/sdb2       (to activate /dev...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+Overfull \hbox (3.81593pt too wide) in paragraph at lines 1289--1292
+\T1/pplx/m/n/10 uses to re-cord the in-for-ma-ti-on about the fi-le.Generally
+ []
+
+
+Overfull \hbox (0.44595pt too wide) in paragraph at lines 1294--1295
+[]\T1/pplx/m/n/10 Inode se-cond part con-tains poin-ter to da-ta blocks
+ []
+
+[46]
+
+page1_10.tex:1296: LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1296     \newline
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+page1_10.tex:1304: Illegal parameter number in definition of \reserved@b.
+<to be read again> 
+                   }
+l.1304 ...tbf{# fsck   <device or partition name>}
+                                                   command we can check the ...
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+page1_10.tex:1304: You can't use `macro parameter character #' in horizontal mode.
+<recently read> ##
+                  
+l.1304 ...tbf{# fsck   <device or partition name>}
+                                                   command we can check the ...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+page1_10.tex:1310: LaTeX Error: Counter too large.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1310   \item \textbf
+                      {What is fsck check or what are the phases of the fsck?}
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (18.42589pt too wide) in paragraph at lines 1316--1317
+[]\T1/pplx/m/n/10 Fourth it checks fi-le sys-tem re-fe-rence counts (nothing
+ []
+
+
+page1_10.tex:1323: LaTeX Error: Counter too large.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1323   \item \textbf
+                      {Why the file system should be unmount before running ...
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (0.29617pt too wide) in paragraph at lines 1323--1326
+[]\T1/pplx/b/n/10 Why the fi-le sys-tem should be un-mount be-fo-re run-
+ []
+
+[47]
+
+page1_10.tex:1331: LaTeX Error: Counter too large.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1331   \item \textbf
+                      {Which type of file system problems you face?}
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+) [48] (main.aux) ) 
 Here is how much of TeX's memory you used:
- 7616 strings out of 475285
- 147926 string characters out of 2774119
- 663209 words of memory out of 3000000
- 29020 multiletter control sequences out of 15000+600000
- 495228 words of font info for 72 fonts, out of 8000000 for 9000
+ 7618 strings out of 475285
+ 147969 string characters out of 2774119
+ 664209 words of memory out of 3000000
+ 29021 multiletter control sequences out of 15000+600000
+ 495485 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 108i,8n,106p,10653b,335s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 108i,8n,106p,10653b,377s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb><C:/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (28 pages, 128603 bytes).
+Output written on main.pdf (48 pages, 159705 bytes).
 PDF statistics:
- 123 PDF objects out of 1000 (max. 8388607)
+ 188 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

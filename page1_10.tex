@@ -741,8 +741,640 @@
     \newline
     Ans.passwd     -x    -1    <user login name>
 
+    \bigskip
+    \bigskip
+
+    \item \textbf{Which one is the default sticky bit directory?}
+    \newline
+    Ans.	/tmp    is the default sticky bit directory.
+
+    \bigskip
+    \bigskip
+
+    \item \textbf{What is the purpose of the profiles?}
+    \newline
+    Ans.Profile is a file to enter some settings about users working environment. ie., we can set user home directory, 		login shell, path, ...etc., 
+    Profiles are two types.
+    (a) Global profile
+	  (b) Local profile
+    \textbf{Global profile}
+     \begin{enumerate}
+      \item Only root user can set and applicable to all the users.
+      \item Only global parameters can entered in this profile.
+      \item The location of the global profile is \textbf{/etc/bashrc}
+     \end{enumerate}
+    \textbf{Local profile}
+     \begin{enumerate}
+      \item Every user has his/her own profile.
+      \item The settings entered in this profile are only for that user.
+      \item The location of the profile is\textbf{bash\-profile}(hidden file)  in that particular user's home directory.
+     \end{enumerate}
+
+    \bigskip
+    \bigskip
+
+    \item \textbf{Can we mount/unmount the  O/S   file system?}
+    \newline
+    Ans. No, we cannot mount or unmount the   O/S   file system.
+
+    \bigskip
+    \bigskip
+
+    \item \textbf{How to find the users who are login and how to kill them?}
+    \newline
+    Ans. fuser    -cu	:(to see who are login)
+    fuser    -ck    <user login name> :(to kill the specified user)
+
+    \bigskip
+    \bigskip
+
+    \item \textbf{what is Access Control List (ACL)?}
+    \newline
+    Ans.Define more access rights nothing but permissions to files and directories. Using Access Control list we assign 	the permissions to some particular users to access the files and directories.
+    ACL can cab be applied on ACL enabled partition that means you need to enable ACL while mounting 
+    the partition.
+
+    \bigskip
+    \bigskip
+
+    \item \textbf{How to implement ACLs?}
+    \newline
+    Ans.\begin {itemize}
+          \item Create a partition and format it with ext4 file system.
+          \item  Mount the file system with ACL.
+          \item Apply ACL on it.
+          \item Create a partition using \textbf{fdisk } command.
+          \item Format the above partition with ext4 file system using  \textbf{mkfs.ext4    <partition name> } command.
+          \item Create the mount point using  \textbf{mkdir    /<mount point>}  command.
+          \item Mount that file system on the mount point using \textbf{mount   -o   acl    <partition name><mount point>	}command.
+          \item Mount the partition permanently using \textbf{vim   /etc/fstab }  (open this file and make an entry as below}
+          \item \textbf{<partition name><mount point><file system type>     defaults, acl      0    0}
+          \item Save and exit this file.
+          \item If the partition is already mounted then just add \textbf{acl} after defaults in  \textbf{/etc/fstab}   file and execute 
+          \item the below command  \textbf{ mount    -o    remount    <partition name>}
+        \end{itemize}
+
+    \bigskip
+    \bigskip
+
+    \item \textbf{How to check the ACL permissions?}
+    \newline
+    Ans.getfacl     <options><file  or  directory name>
+    The options are,  \begin{itemize}
+                        \item -d:Display the default ACLs.
+                        \item -R :Recurses into subdirectories
+                      \end{itemize}
+    
+    \bigskip
+    \bigskip
+
+    \item \textbf{How to assign ACL permissions?}
+    \newline
+    Ans.setfacl     <options><argument> : <username>: <permissions><file  or  directory name>
+    The options are,  \begin{itemize}
+                        \item -m :  Modifies an ACL.
+                        \item -x :  Removes an ACL.
+                        \item -b :  Remove all the ACL permissions on that directory.
+                        \item -R : Recurses into subdirectories
+   The arguments are,   \item  u : user
+                        \item g : group
+                        \item o : other
+                      \end{itemize}    
+    
+    \bigskip
+    \bigskip
+
+    \item \textbf{What is the syntax to assign read and write permissions to particular user, group  and  other?}
+    \newline
+    Ans.\begin{itemize}
+          \item setfacl    -m   u : <user name> : <permissions><file  or  directory>
+          \item setfacl    -m   g : <user name> : <permissions><file  or  directory>
+          \item setfacl    -m   o : <user name> : <permissions><file  or  directory>
+        \end{itemize}
+
+    \bigskip
+    \bigskip
+
+    \item \textbf{What is the syntax to assign read and write permissions to particular user, group  and  other  at  a time?}
+    \newline
+     Ans.setfacl    -m   u : <user name> : <permissions>,  g : <user name> : <permissions>,  o : <user name> : 		<permissions><file  or  directory>
+    \newline
+    \textbf{Useful  commands :}
+    \begin{itemize}
+        \item setfacl    -x   u : <user name><file  or  directory name> (to remove the ACL permissions from the user)
+        \item setfacl    -x   g : <user name><file  or  directory name>(to remove the ACL permissions from group)
+        \item setfacl    -x   o : <user name><file  or  directory name> (to remove the ACL permissions from other)
+        \item setfacl    -b    <file  or  directory>	(to remove all the ACL permissions on that file     directory)
+    \end{itemize}
+
+
+    \item\textbf{How will you lock a user, if he enters wrong password  3  times?}
+    \newline
+     Ans.pam\_tally.so module maintains a count of attempted accesses, can reset count on success, can deny access if 	too many attempts fail. Edit /etc/pam.d/system-auth file, enter:
+    \newline
+    \begin{itemize}
+      \item vi /etc/pam.d/system-auth Modify as follows: auth required pam_tally.so no_magic_root account required pam_tally.so deny=3 no_magic_root lock_time=180
+      \item\textbf{deny=3 }: Deny access if tally for this user exceeds 3 times}
+      \item\textbf{lock\_time=180 }: Always deny for 180 seconds after failed attempt. There is 
+      \item alsounlock_time=n option. It allow access after n seconds after failed attempt. If this option is used the user will be locked out for the specified amount of time after he exceeded his maximum allowed attempts. Otherwise the account is locked until the lock is removed by a manual intervention of the system administrator.
+      \item \textbf{magic\_root }: If the module is invoked by a user with uid=0 the counter is not incremented. The sys-admin should use this for user launched services, like su, otherwise this argument should be omitted.
+      \item no_magic\_root : Avoid root account locking, if the module is invoked by a user with uid=0.Save and close the file.
+    \end{itemize}
+
+    \bigskip
+    \bigskip
+    
+    \item \textbf{How to see the no. of failed logins of the users?}
+    \newline
+     Ans.\begin{itemize}
+          \item faillog    -u    <user name> :(to see the specified users failed login attempts)
+          \item faillog    -a 	: (to see failed login attempts of all users)
+          \item faillog    -M  <Max. no>    -u    <user name>	:(to set Max. login failed attempts to that user)
+          \item faillog    -M  5    -u    raju	:(to set Max. login failed attempts to 5 for user raju)
+        \end{itemize}
+
+    \bigskip
+    \bigskip
+
+    \item \textbf{What is disk quotas and how to enable them?}
+    \newline
+    Ans.By configuring the disk quotas we can restrict the user to use unlimited space on the file system and 
+        also to 	restrict the unlimited files in the file system. We can configure the disk quotas in ways. They are,
+      \begin{itemize}
+        \item user quotas
+        \item 	group quotas
+      \end{itemize}
+     \textbf{Steps to enable :}
+     First check whether the quota package is installed  or  not  by \textbf{rpm    -qa  |grep   quota    command. If quota}	package is not Installed then install the  quota package by \textbf{yum  install  quota*   -y }   command.
+      \begin{itemize}
+        \item quotaon	:(to enable the quota)
+        \item  quotaoff	:(to disable the quota)
+        \item  edquota	:(to edit  or  modify the quota)
+        \item repquota	:(to display  or  report the present quota)
+        \item quotacheck :(to create a quota database)
+      \end{itemize}
+    quotas  cab be applied on file systems only.
+
+    \bigskip
+    \bigskip
+
+    \item \textbf{How to enable the user quota on a file system?}
+    \newline
+    Ans.\begin{itemize}
+           \item Open the  /etc/fstab   file by  \textbf{ vim  /etc/fstab }command  and  goto the mount point entry line and type as, /dev/sdb1	/mnt/prod	ext4	defaults,  usrquota 	0	0	(save and exit this file)
+           \item Update the quota  on mount point by  # \textbf{mount   -o   remount, usrquota    <mount point> } ii	command.
+           \item Create the user quota database by  # quotacheck     -cu    <mount point>    command  (where   -c    means  	created the quota database   and   -u   means  user quota).
+           \item Check whether the quota is applied  or  not  by   # mount    command.
+           \item Enable the quota  by   # quotaon     <mount point>    command.
+	         \item Apply the user quota  for a user  by   \textbf{edquota     -u    <user name><mount point>}    
+           \item blocks: No. of blocks used  (already)
+		       \item soft : Warning limit
+		       \item hard : Maximum limit
+		       \item 0     : Unlimited usage
+		       \item inodes : No. of files created  (already)
+        \end{itemize}
+        If  soft=10   and   hard=15  means after crossing the soft limit a warning message  will be 
+        displayed  and  if 	 hard limit is also crosses then it won't  allow to create the files for that user.
+        (save and exit the above quota editor)
+
+    \item \textbf{How to enable the quota on block level?}
+    \newline
+    Ans.Apply the user quota for a user by  # edquota   -eu    <user name><mount point>    command.
+    File system	blocks		soft		hard		inodes      	soft      
+    \newline
+    hard	/dev/sdb1	     0		5000	              10000		     0	
+    0	   0	(save and exit the quota editor)
+      \begin{itemize}
+         \item soft=5000 : means if it reaches  upto  5MB, there is no warnings. If  it exceeds  ie., from 5MB  -  10MB there will be warnings messages displayed, but the files 
+         \item hard=10000 : If it reached to 10MB, then it will not allow to create the files. The grace period by default 	is 7 days. So, we can change the grace period by   #edquota    -t    command,  here we can      change the default  7 days grace period  to  our required days of grace period.grace period  means, if the user not created any files within the grace period days the soft limit becomes as  hard limit. ie., soft and hard limits are equal.
+      \end{itemize}
+      \newline
+      edquota    -p    <user name 1><user name 2>:to apply  user name 1 quotas to user name 2, ie., no 							           need to edit the quota editor for user name 2)
+    
+    \bigskip
+    \bigskip
+
+    \item \textbf{How to enable the group quota?}
+    \newline
+    Ans.\begin{enumerate}
+          \item Open the \textbf{/etc/fstab   file by  # vim  /etc/fstab  } command  and  goto the mount point entry line and type as,/dev/sdb1	/mnt/prod	ext4	defaults,  grpquota	0	0
+            save and exit this file
+          \item Update the quota on mount point by  \textbf{ mount  -o  remount, usrquota, grpquota  <mount point>}command
+          \item Create the user quota database by  \textbf{quotacheck    -cug    <mount point>    command  }
+            where   -c   means  			    created the quota database,   -u   means  user quota  and -g means  group quota ).
+          \item Check whether the quota is applied  or  not  by   \textbf{mount }   command.
+          \item Enable the quota  by   # quotaon  \textbf{ <mount point>   } command.
+          \item  Apply the user quota  for a user  by   \textbf{edquota     -g    <group  name><mount point>    command.}
+          \item File system	blocks		soft		hard		inodes      
+          \item /dev/sdb1	     0		   0		    0		     0		    0		    0
+        \end{{enumerate}
+        \begin{itemize}
+          \item blocks: No. of blocks used  (already)
+          \item soft  :  Warning limit
+          \item hard  :   Maximum limit
+          \item 0      :  Unlimited usage
+          \item inodes :  No. of files created  (already)
+        \end{itemize}
+      Here we can specify the block level quota  or  file level  quotas.
+		   group quota can be applicable to all the users of that specified  group.
+		  (save and exit the above quota editor)
+
+    \bigskip
+    \bigskip
+
+    \item \textbf{How to change the password for multiple  users  at a time}
+    \newline
+    Ans.chpasswd :(to change multiple user's  passwords)
+         \begin{itemize}
+          \item <user name 1> : <password>
+          \item  <user name 2> : <password>
+          \item  <user name 3> : <password>
+          \item <user name 4> : <password>
+          \item <user name 5> : <password>
+          \item (Ctrl + d    ----->   to save and exit)
+	       \end{itemize}
+        Then  the above 5 user's passwords will be changed at a time. But here the passwords will not be encrypted while typing passwords. So, anybody can see the passwords.  ie., there is no security.
+\end{enumerate}     
+    \bigskip
+    \bigskip
+    \bigskip 
+
+\textbf{Managing Partitions and File Systems}
+   
+\bigskip
+
+\begin{enumerate}
+  \item \textbf{What is partition?}
+  \newline
+   Ans.A partition is a contiguous set of blocks on a drive that are treated as independent disk. 
+   
+   \bigskip
+   \bigskip
+  
+  \item \textbf{What is partitioning?}
+  \newline
+  Ans.Partitioning means to divide a single hard drive into many logical drives.
+
+  \bigskip
+  \bigskip
+
+  \item \textbf{Why we have multiple partitions?}
+  \newline
+  Ans.\begin{itemize}
+        \item Encapsulate our data.
+        \item Since file system corruption is limited to that partition only.
+        \item So we can save our data from accidents. 
+        \item We can increase the disk space efficiency
+        \item Depending on our usage we can format the partition with different block sizes.
+        \item So we can reduce the wastage of the disk.
+        \item We can limit the data growth by assigning the disk quotas
+      \end{itemize}
+
+  \bigskip
+  \bigskip
+
+  \item \textbf{What is the structure of the disk partition?}
+  \newline
+  Ans.The first sector of the O/S disk contains the MBR (Master Boot Record). The MBR is divided into 3 parts and it's size is 512 bytes. The first part is IPL (Initial Program Loader) and it contains the Secondary Boot Loader. So, IPL  is responsible for booting the O/S and it's size is 446 bytes The second part is PTI (Partition Table 
+  Information). It contains the number of partitions on the disk, sizes of the partitions and type of the partitions
+
+  \bigskip
+  \bigskip
+
+  \item \textbf{Explain the disk partition criteria?}
+  \newline
+  Ans.Every disk can have max. 4 partitions. The 4 partitions are 3 Primary partitions and 1 Extended partition.
+  The MBR and O/S will install in Primary partition only. The Extended partition is a special partition and can be further divided into multiple logical partitions.
+  
+  \bigskip
+  \bigskip
+
+  \item \textbf{How to identify the disks?}
+  \newline
+  Ans.\begin{itemize}
+         \item In Linux different types of disks will be identified by different naming conventions.
+         \item IDE) drives will be shown as /dev/hda, /dev/hdb, /dev/hdc, ...etc.,  and the partitions are /dev/hda1,  /dev/hda2, /dev/hda3, ...etc.
+         \item iSCSI/SCSI  and SATA drives will be shown as /dev/sda, /dev/sdb, /dev/sdc, ...etc.,  and the partitions are /dev/sda1, /dev/sda2, /dev/sda3, ...etc.,
+         \item Virtual drives will be shown as /dev/vda, /dev/vdb, /dev/vdc, ...etc.,  and the partitions are /dev/vda1, /dev/vda2, /dev/vda3, ...etc.,
+         \item IDE :Integrated Drive Electronics.
+         \item iSCSI:Internet Small  Scale System Interface.
+         \item SCSI : Small Scale System Interface.
+      \end{itemize}
+  
+  \bigskip
+  \bigskip
+
+  \item \textbf{What is file system?}
+  \newline
+  Ans.It is a method of storing the data in an organized fashion on the disk. Every partition on the disk except MBR and 	Extended partition should be assigned with some file system in order to make them to store the data. File system is applied on the partition by formatting it with a particular type of file system.
+  
+  \bigskip
+  \bigskip
+
+  \item \textbf{What are the different types of file systems supported in Linux?}
+  \newline
+  Ans.\begin{itemize}
+        \item The Linux supported file systems are ext2, ext3, ext4, xfs, vfat, cdfs, hdfs, iso9660 ...etc.,
+        \item  The ext2, ext3, ext4 file systems are widely used in RHEL-6 and xfs file system is introduced on RHEL-7. 
+        \item The vfat file system is used to maintain a common storage between Linux and Windows O/S.
+        \item The cdfs file system is used to mount the CD-ROMs and the hdfs file system is used to mount DVDs.
+        \item The iso9660 file system is used to read CD/DVD.iso image format files in Linux O/S.
+  \end{itemize}
+
+  \bigskip
+  \bigskip
+  
+  \item \textbf{How to create different types of partitions?}
+  \newline
+  Ans. fdisk -l fdisk /dev/sdc
+	   Command (m for help) : n   (type n for new partition)
+	  (p - primary) or e - extended) : p (type p for primary partition or type e for extended partition)
+    \begin{itemize}
+      \item First cylinder :  (press Enter for default first cylinder)
+	    \item Last cylinder :  + <size in KB/MB/GB/TB>
+	  \end{itemize}
+	  Command (m for help) : t   (type   t   to change the partition id)
+    for example:    8e for Linux LVM,   82  for Linux Swap   and  83  for  Linux normal partition)
+		Command (m for help) : w        (type   w   tosave the changes into the disk)
+	  partprobe /partx  -a/kpartx   /dev/sdc1       (to update the partitioning information in partition table)
+  
+  \bigskip
+  \bigskip
+
+  \item \textbf{How to make a file system in Linux?}
+  \newline
+  Ans. mkfs.ext2/ext3/ext4/xfs/vfat	<device name> ( for example/dev/sdc1)
+
+  \bigskip
+  \bigskip
+
+  \item \textbf{How to mount the file systems temporarily or permanently?}
+  \newline
+  Ans.mkdir /mnt/oracle	
+      mount /dev/sdc1  /mnt/oracle   (temporary mount)
+      vim /etc/fstab
+          /dev/sdc1		/mnt/oracle 	       xfs		defaults	0	0
+	Esc+:+wq!
+	# mount   -a  (permanent mount)
+
+  \bigskip
+  \bigskip
+
+  \item \textbf{How to delete the partition?}
+  \newline
+  Ans. fdisk  /dev/sdc
+  Command (m for help) :d          (type   d   for delete the partition)
+  Partition number :  (specify the partition number)
+  Command (m for help) : w      (type   w   to write the changes into disk)
+  partprobe/partx  -a/kpartx   /dev/sdc1(to update the partition table without restarting the system)
+
+  \bigskip
+  \bigskip
+
+  \item \textbf{What is mounting and in how many types can we mount the partitions?}
+  \newline
+  Ans. Attaching a parititon to a directory under root is known as mounting.There two types of mountings in Linux/Unix.
+   \begin{itemize}
+     \item Temporary Mounting:In a temporary mounting first we create a directory and mount the partition on that directory. But this type mounting will last only till the system is up and once it is rebooted the mounting will be lost.
+      Example:# mount   <options><device name><directory name (mount point)>
+     \item Permanent Mounting :In this also first we create the directory and open the /etc/fstab file and make an entry as below,
+    <device name><mount point><file system type><mount options><take a backup or not><fsck value>
+   \end{itemize} 
+    Whenever the system  reboots mount the partitions according to entries in /etc/fstab file. So, these type of mountings are permanently even after the system is rebooted.
+    # mount   -a          to mount the partitions without reboot)
+
+  \bigskip
+  \bigskip
+
+  \item \textbf{Which files are related to mounting in Linux?}
+  \newline
+  Ans.\begin{itemize}
+         \item \textbf{/etc/mtab: }is a file which stores the information of all the currently mounted file systems and this file is    dynamic  and keep on changing.
+         \item \textbf{/etc/fstab }is keeping information about the permanent mount points. If we want to make our mount point  permanent then make an entry about the mount point in this file.
+      \end{itemize}
+      /etc/fstab  entries are:
+      1		           2	                  	3	            4		     5		 6
+      device name     mount point       F/S type	mount options	Dump                    FSCK 
+
+
+  \bigskip
+  \bigskip
+
+  \item \textbf{The partitions are not mounting even though there are entries in /etc/fstab. How to solve this problem?}
+  \newline
+  Ans. First check any wrong entries are there in /etc/fstab file. If all are ok then unmount all the partitions by executing the below command,
+    \_umount    -a Then mount again mount all the partitions by executing the below command,
+    \_mount   -a
+
+  \bigskip
+  \bigskip
+
+  \item \textbf{When trying to unmounting it is not unmounting, how to troubleshoot this one?}
+  \newline
+  Ans.Some times directory reflects error while unmounting because,(i) you are in the same directory and trying to unmount it, check with # pwdcommand.
+	(ii) some users are present or accessing the same directory and using the contents in it, check this with 
+     \begin{itemize}
+       \item fuser -cu  <device name>       (to check the users who are accessing that partition)
+       \item lsof  <device name>     (to check the files which are open in that mount point)
+       \item fuser   -ck   <opened file name with path>      (to kill that opened files)
+     \end{itemize}
+     Now we can unmount that partition using   # umount     <mount point>
+  
+  \bigskip
+  \bigskip
+
+
+  \item \textbf{How to see the usage information of mounted partitions?}
+  \newline
+  Ans.df   -hT       (to see device name, file system type, size, used, available size, use% and mount point)
+  
+  \bigskip
+  \bigskip
+
+  \item \textbf{How to see the size of the file or directory?}
+  \newline
+  Ans.\begin{itemize}
+         \item du   -h   <filename or directory  name> :(to see the size of the in that directory)
+         \item du   -h  :(to see all the file sizes which are located in the present working directory)
+         \item du  .| sort  -nr | head  -n10  :(to see the biggest files from current location)
+         \item du  -s * | sort  -nr | head  -n10    : (to see the biggest directories from that partition)
+         \item ncdu   :(to list biggest files and directories, we have to install the ncdu package  before executing this) 
+      \end{itemize}
+  
+  \bigskip
+  \bigskip
+
+  \item \textbf{How to assign a label to the partition?}
+  \newline
+  Ans.e2label   <device name or partition name><label name>      (to assign the label to that partition)
+  Example :    # e2label  /dev/sdb1  oradisk      (to assign oradisk label to /dev/sdb1 partition)
+	# mount   -l       (to list all the mounted partitions along with their labels)
+  
+  \bigskip
+  \bigskip
+
+  \item \textbf{How to mount a partition temporarily or permanently using label?}
+  \newline
+  Ans.mount   LABEL=<label name><mount point> ex :  # mount   LABEL=oradisk     /mnt/oracle    (to mount the oradisk label on /mnt/oracle directory)
+    # vim  /etc/fstab
+    LABEL=oradisk	/mnt/oracle	ext4	defaults	0	0
+    Esc+:+wq!    (to save and exit the file)
+    # mount    -a       (to mount the partitions)
+    # mount	(to verify whether it is mounted or not)
+
+  \bigskip
+  \bigskip
+
+  \item \textbf{How mount the partition permanently using block id (UUID)?}
+  \newline
+  Ans. blkid   <partition name or disk name>       (to see the UUID or block id of that partition)
+	 Example :  #blkid   /dev/sdb2       (to see the UUID or block id of the /dev/sdb2 partition)
+	 Copy that UUID with mouse and paste it in /etc/fstab file and make an entry about that.
+	 Example:  # vim /etc/fstab
+	 UUID="{.......................}"  	/mnt/oracle	ext4	defaults	0	0
+	 Esc+:+wq!      (to save and exit)
+
+  \bigskip
+  \bigskip
+
+  \item \textbf{What is the basic rule for swap size?}
+  \newline
+  Ans.\begin{itemize}
+         \item If the size of the RAM is less than or equal to 2GB, then the size of the swap = 2 X RAM size.
+         \item If the size of the RAM is more than 2GB, then the size of the swap = 2GB + RAM size
+      \end{itemize}
+   
+  \bigskip
+  \bigskip
+
+  \item \textbf{How to create a swap partition and mount it permanently?}
+  \newline
+  Ans.\begin{itemize}
+        \item free   -m  :(to see the present swap size)
+        \item swapon  -s   :(to see the swap usage)
+        \item fdisk   <disk name>	(to make a partition)
+        \item Example:  # fdisk   /dev/sdb
+        \item Command (m for help) :  n    (to create a new partition)
+        \item First cylinder :  (press Enter to take as default value)
+        \item Last cylinder :  +2048M   (to create 2GB partition)
+        \item Command (m for help) :   t     (to change the partition id)
+        \item Enter the partition No.:  2      (to change the /dev/sdb2 partition id)
+        \item Enter the id :  82    (to change the partition id Linux to Linux Swap)
+        \item Command (m for help) :  w    (to save the changes into the disk)
+        \item partprobe  /dev/sdb        (to update the partition table information)
+        \item mkswap  <device or partition name>     (to  format the partition with swap file system)
+        \item Example :  # mkswap   /dev/sdb2        (to format the /dev/sdb2 partition with swap file system)
+        \item swapon    <device or partition name>     (to activate the swap space)
+        \item Example :  # swapon   /dev/sdb2       (to activate /dev/sdb2  swap space)
+        \item free   -m       (to see the swap size)
+        \item vim /etc/fstab	   (to make an entry to permanent mount the swap partition)
+        \item /dev/sdb2		swap	swap	defaults	0	0
+        \item Esc+:+wq!     (to save and exit)
+  \end{itemize}
+
+  \bigskip
+  \bigskip
+
+  \item \textbf{What are the attributes of the file system?}
+  \newline
+  Ans.\begin{itemize}
+          \item Inode number
+          \item File name
+          \item data block 
+      \end{itemize}
+
+  \bigskip
+  \bigskip
+
+  \item \textbf{What is inode number and what is the use of it?}
+  \newline
+  Ans.Inode numbers are the objects the Linux O/S uses to record the information about the file.Generally inode number contains two parts.
+    \begin{itemize}
+      \item Inode first part contains information about the file, owner, its size and its permissions.
+      \item Inode second part contains pointer to data blocks associated with the file content.
+    \end{itemize}
+    \newline
+    That's why using the inode number we can get the file information quickly.
+
+  \bigskip
+  \bigskip
+  
+  \item \textbf{How to check the integrity of a file system or consistency of the file system?}
+  \newline
+   Ans.\textbf{# fsck   <device or partition name>} command we can check the integrity of the file system.
+   But before running the fsck command first unmount that partition and then run fsck command.
+ 
+  \bigskip
+  \bigskip
+
+  \item \textbf{What is fsck check or what are the phases of the fsck?}
+  \newline
+  Ans.\begin{itemize}
+        \item First it checks blocks and sizes of the file system
+        \item  Second it checks file system path names
+        \item Third it checks file system connectivity
+        \item Fourth it checks file system reference counts (nothing but inode numbers)
+        \item  Finally it checks file system occupied cylindrical groups
+      \end{itemize}
+
+  \bigskip
+  \bigskip
+
+  \item \textbf{Why the file system should be unmount before running the fsck command?}
+  \newline
+  Ans.If we run \textbf{fsck }on mounted file systems, it leaves the file systems in unusable state and also deletes the data. 	So, before running the fsck command the file system should be unmounted.
+  
+
+  \bigskip
+  \bigskip
+
+  \item \textbf{Which type of file system problems you face?}
+  \newline
+  Ans.\begin{itemize}
+         \item File system full
+         \item File system corrupted
+      \end{itemize} 
+    
+\end{enumerate}
+      
+
+
+   
+   
+   
+
+  
+
+
+        
+
+  
+  
+
+
+          
+    
+        
+
 
     
+
+
+    
+    
+    
+
+
+
+        
+          
+  
+    
+
+
+
+
+
 
     
 
