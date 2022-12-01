@@ -985,17 +985,17 @@
     \item \textbf{How to change the password for multiple  users  at a time}
     \newline
     Ans.chpasswd :(to change multiple user's  passwords)
-         \begin{itemize}
-          \item <user name 1> : <password>
-          \item  <user name 2> : <password>
-          \item  <user name 3> : <password>
-          \item <user name 4> : <password>
-          \item <user name 5> : <password>
-          \item (Ctrl + d    ----->   to save and exit)
-	       \end{itemize}
+        \begin{itemize}
+           \item <user name 1> : <password>
+           \item  <user name 2> : <password>
+           \item  <user name 3> : <password>
+           \item <user name 4> : <password>
+           \item <user name 5> : <password>
+           \item (Ctrl + d    ----->   to save and exit)
+	      \end{itemize}
         Then  the above 5 user's passwords will be changed at a time. But here the passwords will not be encrypted while typing passwords. So, anybody can see the passwords.  ie., there is no security.
-\end{enumerate}     
-    \bigskip
+\end{enumerate}   
+    \bigskip 
     \bigskip
     \bigskip 
 
@@ -1004,23 +1004,23 @@
 \bigskip
 
 \begin{enumerate}
-  \item \textbf{What is partition?}
-  \newline
-   Ans.A partition is a contiguous set of blocks on a drive that are treated as independent disk. 
+   \item \textbf{What is partition?}
+   \newline
+    Ans.A partition is a contiguous set of blocks on a drive that are treated as independent disk. 
    
    \bigskip
    \bigskip
   
-  \item \textbf{What is partitioning?}
-  \newline
-  Ans.Partitioning means to divide a single hard drive into many logical drives.
+   \item \textbf{What is partitioning?}
+   \newline
+   Ans.Partitioning means to divide a single hard drive into many logical drives.
 
-  \bigskip
-  \bigskip
+   \bigskip
+   \bigskip
 
-  \item \textbf{Why we have multiple partitions?}
-  \newline
-  Ans.\begin{itemize}
+   \item \textbf{Why we have multiple partitions?}
+   \newline
+   Ans.\begin{itemize}
         \item Encapsulate our data.
         \item Since file system corruption is limited to that partition only.
         \item So we can save our data from accidents. 
@@ -1334,23 +1334,791 @@
          \item File system full
          \item File system corrupted
       \end{itemize} 
+
+  \bigskip
+  \bigskip
     
-\end{enumerate}
+  \item \textbf{How to extend the root file system which is not on LVM?}
+  \newline
+   Ans.By using \textbf{gparted }	command we can extend the root partition, otherwise we cannot extend the file systems 	which is not on LVM.
+
+  \bigskip
+  \bigskip
+
+  \item \textbf{How to unmount a file system forcefully?}  
+  \newline
+  Ans.umount    -f    <mount point>
+  \newline
+	    fuser    -ck    <mount point>
+
+  \bigskip
+  \bigskip
+
+  \item \textbf{How to know the file system type?}
+  \newline
+   Ans.df   -hT       (command gives the file system type information)
+
+   \bigskip
+   \bigskip
+
+  \item \textbf{How to know which file system occupy more space and top 10 file systems?}
+  \newline
+  Ans. df   -h   <device or partition name>  | sort   -r  |  head    -10
+  
+  \bigskip
+  \bigskip
+
+  \item \textbf{What is the command to know the mounted file systems?}
+  \newline
+  Ans. mount    or  # cat  /etc/mtab
+
+  \bigskip
+  \bigskip
+
+  \item \textbf{How to know whether the file system is corrupted or not?}
+  \newline
+  Ans. First unmount the file systems and then run \textbf{fsck }command on that file system.
+
+  \bigskip
+  \bigskip
+
+  \item \textbf{How to recover if a file system is corrupted or crashed?}
+  \newline
+  Ans. If the normal or not related to O/S file system is corrupted first unmount that file system and run fsck command on that file system and if the O/S related file system is corrupted then boot the system with CDROM in single 	user mode and run the fsck command.
+  If the normal or not related to O/S file system is crashed then restore it from the recent backup and if the O/S 	related file system is crashed then boot the system with CDROM in single user mode and restore it from the recent backup
+
+  \bigskip
+  \bigskip
+
+  \item \textbf{How to create a file with particular size?}
+  \newline
+   Ans.dd  if=/dev/zero of=/orafile   bs=1MB  count=500 (to create 500MB size  /orafile with 4KB blocksize)
+
+   \bigskip
+   \bigskip
+
+  \item \textbf{How to find how many disk are attached to the system?}
+  \newline
+  Ans. fdisk    -l     (to see how many disk are attached to the system)
+
+  \bigskip
+  \bigskip
+
+  \item \textbf{What is journaling?}
+  \newline
+  Ans. It is a dedicated area in the file system where all the changes are tracked when the system crashed. So the 	possibility of the file system corruption or crashes is less because of this journaling  feature.
+
+  \bigskip
+  \bigskip
+  
+  \item \textbf{How to repair the Superblock of the file system?}
+  \newline
+  Ans.Whenever we want to store the data into the hard disk, if the input/output error occurs then the Superblock of 	the file system may be erased or corrupted. So, we have to restore or repair that Superblock.
+	 # umount    <file system mount point>	(to unmount the file system)
+	 # dumpe2fs   </dev/vgname/lvname>  | grep  superblock    (to list the superblocks first primary superblock and  then secondary superblock and so on)
+	 # e2fsck   -b   <copy and paste the secondary super block from the above list></dev/vgname/lvname>
+			(to restore the damaged superblock)
+	 # mount   -a 	(to mount the file system)
+
+  \bigskip
+  \bigskip
+
+  \item \textbf{How to create the file systems with the user specified superblock reserve space?}
+  \newline
+  Ans. # mkfs.ext4   -m  <no.><partition name>	(to format the partition with <no.>% of reserve space to superblock)
+   
+  \bigskip
+  \bigskip
+
+  \item \textbf{How to modify the superblock reserve space?}
+  \newline
+  Ans. # tune2fs   -m  <no.><partition name>	(to modify the  superblock reserve space to  <no.>%) 
+
+  \bigskip
+  \bigskip
+
+  \item \textbf{How to modify the superblock reserve space?}
+  \newline
+  Ans. tune2fs   -m  <no.><partition name>	(to modify the  superblock reserve space to  <no.>%) 
+  \newline
+   \textbf{Important Commands :}
+     \begin{itemize}
+       \item fsck   <partition name>	:(to check the consistency of the file system)
+       \item e2fsck  <partition name> :(to check the consistency of the file system in interactive mode)
+       \item e2fsck   -p   <partition name>:(to check the consistency of the file system without interact mode)
+       \item mke2fs   -n  <partition name>	:(to see the superblock information)
+       \item mke2fs   -t  <file system type><partition name> :(to format the partition in the specified filesys type)
+       \item mke2fs    <partition name>:(to format the partition in default ext2 file system type)
+       \item blockdev   --getbs   /dev/sdb1	(to check the block size of the /dev/sdb1 file system)fsck <device or partition name>	(to check and repair the file system) 
+     \end{itemize}
+     Note: Before running this command first unmount that partition then run fsck command.
+    \begin{itemize}
+      \item # umount   -a :(to unmount all the file systems except ( / ) root file system)
+      \item mount:to mount all the file systems which are having entries in /etc/fstab file)
+      \item # fsck   -A 	:	(to run fsck on all file systems)
+      \item # fsck   -AR   -y 	:	(to run fsck without asking any questions)
+      \item# fsck   -AR   -t   ext3   -y	:	(to run fsck on all ext3 file systems)
+      \item# fsck   -n   /dev/sdb1	:(to see the /dev/sdb1 file system report without running fsck)
+      \item # tune2fs   -l   /dev/sdb1	:	(to check whether the journaling is there or not)
+      \item# tune2fs   -j   /dev/sdb1	:	(to convert ext2 file system to ext3 file system)
+      \item# tune2fs   -l   /dev/sdb1	:	(to check whether the journaling is added or not)
+      \item # tune2fs   -O  ^has_journal   /dev/sdb1	:(to convert ext3 file system to ext2 file system)
+      \item # tune2fs   -O  dir_index, has_journal, unit_bg   /dev/sdb1	:(to convert ext2 file system to ext4 file system)
+      \item# tune2fs   -O  extents, dir_index, unit_bg   /dev/sdb1 	: (to convert ext3 file system to ext4 file system)
+      \item# mount   -o  remount, rw    /dev/sdb1	:(to mount the partition with read and write permissions)
+      \item# mount   -o  remount, ro    /dev/sdb1:	(to mount the partition with read only permissions)
+      \item # mount   < directory name>  :		 (to check whether this directory is mount/ normal directory)
+      \item dump2fs   <device or partition name>	:(to check the metadata of the partition and repair the metadata)
+      \item # fdisk   -l 	:(to list total hard disks attached to system and their partitions)
+      \item # fuser   -cu   <device or partition name> :(to see the users who are accessing that file system)
+      \item # fuser   -cK   <device or partition name>  :(to kill the users processes who accessing the file systems)
+    \end{itemize}
+    \textbf{Note:}Even though we kill those users processes sometimes we cannot unmount those partitions, so if this situation arises then first see the process id's of the user opened files by
+    \textbf{lsof  <mount point>   # kill   -9   <process id>} killthose processesforcefully   
+    # journalctl	(It tracks all the log files between two different timings and by default saved in \textbf{ /run/log  )}
+    \textbf{/run/log } is mounted on \textbf{ tmpfs} file system. ie., if system is rebooted, the whole information in that location will be deleted or  erased.
+    We can change /run/log   is mounted on  tmpfs  file system. ie., if system is rebooted, the whole information in that location will   be deleted   or   erased.
+      \begin{itemize}
+        \item # mkdir    -p    /var/log/journal	:(to make a directory in   /var/log location
+        \item chown    root : systemd-journal      /var/log/journal       (to change the group ownership of   /var/log/journal
+        \item chmod    g+s    /var/log/journal:(to set the  sgid  on   /var/log/journal)
+        \item killall    -URS1    systemd-journald:(It is necessary to kill old   /run/log   process   and the location of journal messages is changed to  /var/log/journal)
+        \item # journalctl    -n    5		:	(to display last five lines of all the log files)
+        \item # journalctl    -p   err		:	(to display all the error messages)
+        \item journalctl    -f 	:(to watch journalctl messages continuously)
+        \item journalctl     --since<today>   or   <yesterday>  :  (to see all the journalctl messages since today   or  yesterday) 
+        \item journalctl     --since   "date"    --until    "date"  : (to see the journal messages between the specified two dates) 
+        \item journalctl     -pid=1	:(to see the  pid=1  process name)
+        \item # auditctl	:(to see the audit report).
+      \end{itemize}
+\end{enumerate}    
+
+
+\bigskip
+\bigskip
+
+\textbf{Logical Volume Management and RAID Levels}
+
+\bigskip
+\bigskip
+
+\begin{enumerate}
+  \item \textbf{What is LVM and why we go for LVM?}
+  \newline
+   Ans. \textbf{Lvm}means Logical Volume Management. The combination of 2 or more physical disk in order to make a big  	logical disk is called Logical Volume.  
+        \newline
+        If normal Linux partition is full and an application requires some more disk space, then normal partition cannot 	be extended for that application requirement. For this first we have to take a backup of that normal partition, 	delete that partition and again create that partition with more disk space, format and mount that partition and 	finally restore the application from the backup. This process requires down time
+        So, to overcome this problem  LVM  concept is coming into the picture. Using this LVM we can extend or reduce 	the file systems as per requirement without loss of any data.
+
+  \bigskip
+  \bigskip
+
+  \item \textbf{What are the components of the LVM?}
+  \newline
+   Ans.\begin{itemize}
+          \item Physical Volume (PV)
+          \item Physical Extent (PE)
+          \item Volume Group (VG)
+          \item Logical Volume (LV)
+          \item Logical Extent (LE)
+       \end{itemize}
+      \begin{enumerate}
+        \item \textbf{Physical Volume (PV) }:It is the standard partition that we add to the LVM. Normally a physical volume is a standard primary or logical partition with the partition code as \textbf{8e.}
+        \item \textbf{Physical Extent (PE) }:It is chunk of disk space. Every physical volume is divided into a number of equal sized PEs.
+        \item \textbf{Volume Group (VG)} :It is composed of a group of physical volumes and logical volumes. It is the organizational group of LVM.
+        \item \textbf{Logical Volume (LV)}: It is composed of a group of LEs. We can format (make a file system) and mount any file system on the logical volume. The size of these logical volumes can easily be increased or decreased as per the requirement.
+        \item \textbf{Logical Extent (LE)}:It is also a chunk of disk space. Every logical extent is mapped to a specific physical extent.
+      \end{enumerate}
+
+  \bigskip
+  \bigskip
+
+  \item \textbf{How to create the LVM, make a file system and mount that permanently?}
+  \newline
+   Ans. \begin{itemize}
+            \item Take two physical disks for example  \textbf{/dev/sdb }  and    /dev/sdc. if there is no second disk then make the 			required partitions using  # fdisk command and change the partition code as 8e.
+            \item Convert the Physical disk into physical volumes by,\textbf{pvcreate   /dev/sdb    /dev/sdc}
+            \item Then create the volume group by combining physical volumes by,
+              \textbf{vgcreate  <volume group name><physical volume names>   or}
+              \textbf{# vgcreate   -s  <PE size in MBs><volume group name><physical volume names>}
+            \item Then create the logical volume on the above created volume group by,
+               \textbf{lvcreate   -L  +<size in MBs>   -n  <logical volume name><Volume group name>  or}
+               \textbf{# lvcreate   -l   <no. of PEs>    -n   <logical volume name><volume group name>}
+            \item  Make a file system on the above created logical volume by,  
+              \textbf{mkfs.ext2/ext3/ext4/xfs    /dev/<volume group name>/<logical volume name>}
+              Create a mount point to mount the above created LVM file system by,
+               \textbf{mkdir   /mnt/<directory name>}
+            \item Mount the LVM on the above created mount point temporarily by,
+            \textbf{mount   /dev/<volume group name>/<logical volume name><mount point>or}
+            Mount the LVM on mount point permanently by,
+             \textbf{vim  /etc/fstab
+	          /dev/<VG name>/<LV name>	/mnt/<directory>	<file system type>	defaults	0	0}
+            Esc+:+wq!
+            \item \textbf{mount   -a}
+            \item \textbf {df   -hT } :  (to see the mounted partitions with file system types)
+        \end{itemize}
+    
+    \bigskip
+    \bigskip
+
+    \item \textbf{How to see the details of the Physical Volumes?}
+    \newline
+    Ans.\begin{itemize}
+           \item pvs :(displays all physical volumes with less details)
+           \item  pvdisplay :	(displays  all physical volumes with more details)
+           \item pvdisplay <physical volume name> :	(displays the details of the specified physical volume)
+           \item pvscan	:(to scan all the physical volumes)
+           \item #pvscan    <PV name>	:(to scan the specified physical volume)
+        \end{itemize}
+
+    \bigskip
+    \bigskip
+
+    \item \textbf{How to see the details of the Volume Groups?}
+    \newline
+    Ans.\begin{itemize}
+          \item vgs	:(displays all volume groups with less details)
+          \item# vgdisplay :(displays all volume groups with more details)
+          \item # vgdisplay   <VG name>	:(displays the specified volume group with more details)
+          \item# vgscan 	:(to scan all the volume groups)
+          \item# vgscan    <VG name>:(to scan the specified volume group)
+        \end{itemize}
+
+    \bigskip
+    \bigskip
+    
+    \item \textbf{How to see the details of the Logical Volumes?}
+    \newline
+    Ans.\begin{itemize}
+           \item lvs :(displays all logical volumes with less details)
+           \item # lvdisplay :(displays all logical volumes with more details)
+           \item # lvdisplay   <LV name>:(displays the specified logical volume details)
+           \item # lvscan	:(to scan all the logical volumes)
+           \item # lvscan    <LV name>	: (to scan the specified logical volume)	
+        \end{itemize}
+    
+    \bigskip
+    \bigskip
+
+    \item \textbf{How to extend the Volume Group?}
+    \newline
+    Ans. Extending the volume group is actually adding a new physical volume to the volume group.
+    To extend the volume group we need to create a new partition using \textbf{# fdisk }command and make sure that it's partition id should be \textbf{8e,} save the changes and update the partition table by \textbf{# partprobe}
+    \newline 
+    Create a physical volume on the newly created partition using \textbf{ # pvcreate} command.
+    Add the partition to the volume group using \textbf{# vgextend }command 
+    Example :  # fdisk   /dev/sdb
+            \begin{itemize}
+              \item Command (m for help) : n
+              \item First cylinder : press Enter for default one
+              \item Last cylinder : +500M  :(create 500MB partition)
+              \item  Command (m for help) : t   	(to change the partition id)
+              \item Select the partition : type the partition number
+              \item Specify the Hexa code : 8e
+              \item Command (m for help) : w   	(to save the changes)
+            \end{itemize}
+            partprobe   /dev/sdb1
+	          # pvcreate   /dev/sdb1
+	          # vgextend   <VG name>   /dev/sdb1
+	          # vgdisplay   <VG name>	:(to check the size of the volume group)
+
+    \bigskip
+    \bigskip
+    
+    \item \textbf{How to extend the logical volume and update it's file system?}
+    \newline
+    Ans. Sometimes the file system size may be full, so we need to increase the size of the logical volume to continue adding the data in it.
+    The size of the logical volume can be increased online, no downtime required.
+    Check current size of the logical volume by \textbf{# lvdisplay  <LV name>}and the size of the file system by # df -hT  command.
+    Increase the size of the logical volume by \textbf{# lvextend or # lvresize}commands.
+    Then finally update the file system by \textbf{# resize2fs or # xfs_growfs} commands.
+    Example :   # df   -hT
+			# lvextend    -L   +<size in MB></dev/vgname/lvname>    or
+			# lvresize   -L   +<size in MB></dev/vgname/lvname>
+			# resize2fs    </dev/vgname/lvname>
+			# lvdisplay   </dev/vgname/lvname>:(to check the size of the logical volume)
+			# df    -hT	:(to check the size of the file system)
+    
+    \bigskip
+    \bigskip
+
+    \item \textbf{How to reduce the logical volume and update the file system?}
+    \newline
+    Ans.Reducing the size of the logical volume is a complicated task and we have remember some points before reducing the logical volume, otherwise the file system may be damaged .
+    Logical volume size cannot be reduced online and it requires downtime because we have to 
+    unmount the file system by # \textbf{umount   <file system mount point>command.}
+    Check the consistency of the file system by \textbf{# e2fsck   <device or partition name>  command.}
+    Reduce the logical volume by # lvreduce   \textbf{-L   - <Size of in MB></dev/vgname/lvname> command.}
+    Then update the file system by # resize2fs    </dev/vgname/lvname>
+    Finally mount the file system by # mount  -a 
+    Example:# umount    <file system mount point>
+     # e2fsck   <device or partition name>
+      # lvreduce   -L   -<size in MB></dev/vgname/lvname>
+     # resize2fs   </dev/vgname/lvname>
+     # lvdisplay   </dev/vgname/lvname>	:(to check the size of the logical volume>
+     # mount   -a   :(to mount the file system)
+     # df    -hT 		:(to check the size of the file system)
+
+     \bigskip
+     \bigskip
+
+     \item \textbf{How to move or migrate the logical volume data from one physical volume to another physical volume?}
+     \newline
+     Ans.There might be a situation where the physical volume might be failing and it is required to replaced. In such case, we need to migrate or move the logical volume data from the failed physical volume new physical volume and isolate (remove) the failed physical volume.
+     First access the mount point of the failing physical volume and check the data in it.
+     Verify the size of the physical volume by #pvs   or   \textbf{#pvdisplay   </dev/vgname}/lvname>command.
+     Unmount the file system of that physical volume by \textbf{# umount   <file system mount point>}
+     Add a new physical volume and the size should be same size or higher than that failing physical volume.
+     Migrate the physical volume contents to the new physical volume using  \textbf{# pvmove  <old PV>}<new PV>
+     Mount back the logical volume, access the mount point and verify the data in it.
+     Remove the failed the physical volume by #vgreduce  \textbf{ <vgname><pvname>  command.}
+     Example : \begin{itemize}
+                   \item # cd   <file system mount point>
+                   \item ls 
+                   \item # pvs   <pvname>    or   # pvdisplay   <pvname>
+                   \item # umount   <file system mount point>
+                   \item # pvcreate   <device or partition name>
+                   \item #vgextend    <vgname><pvname>
+                   \item # pvmove   <old pvname><new pvname>
+                   \item # mount   -a
+                   \item # vgreduce    <vgname><failed pvname>
+                   \item # cd   <file system mount point>
+                   \item # ls
+                \end{itemize}
+    
+    \bigskip
+    \bigskip
+
+    \item \textbf{How to delete or remove the logical volume?}
+    \newline
+    Ans.To delete or remove the logical volume, first unmount the file system by \textbf{# umount   <mount point>}Remove the entry in /etc/fstab file.
+    Remove the logical volume by \textbf{# lvremove    </dev/vgname/lvname>command.}
+    Verify whether the logical volume is removed or not by \textbf{# lvs   or   # lvdisplay   command.}
+    Example : 	# umount   <file system mount point>
+			# vim /etc/fstab  :(delete the entry of the logical volume)
+			Esc+:+wq!	:(save and exit the file)
+			# lvremove    </dev/vgname/lvname>
+			# lvs    or    # lvdisplay :(to verify whether logical volume is removed or not)
+ 
+    \bigskip
+    \bigskip
+
+    \item \textbf{How to delete or remove the volume group?}
+    \newline
+    Ans.To delete or remove the volume group, first make sure that any logical volume should not be mounted because while removing a volume group it will delete or remove the logical volumes in that volume group.
+    Then delete or remove the volume group by # vgremove    <vgname>command.
+    Verify whether the volume group is remove or not by # vgs    or    # vgdisplay   command.
+    Example : 	# umount     <file system mount point>	:	(to unmount the file system if there is any LV)
+			# vim   /etc/fstab 	:(delete the entry of the logical volume)
+			Esc+:+wq!	:(save and exit the file)
+			# vgremove     <vgname>
+			# vgs     or     # vgdisplay :(to verify whether volume group is removed or not)
+
+    \bigskip
+    \bigskip
+
+    \item \textbf{How to delete or remove the physical volume?}
+    \newline
+    Ans. Deleting or removing a physical volume is very simple and the only thing we should check that the physical volume we are going to delete should not belong to any volume group ie., we can only delete or remove the physical volume which is free.
+    Then delete or remove the physical volume by \textbf{# pvremove    <pvname>}command Verify whether the physical volume is removed or not by # pvs    or     #pvdisplay    command.
+	  Example :  # pvremove   <pvname>
+			# pvs    or     #pvdisplay	:(to verify whether the physical volume is removed or not)
+ 
+    \bigskip
+    \bigskip
+
+    \item \textbf{How to restore the volume group which is removed mistakenly?}
+    \newline
+    Ans. First unmount file system by \textbf{# umount   <file system mount point> } command.Check the volume group backup list by # vgcfgrestore    --list   <volume group name>command.
+     Then remove the logical volume by \textbf{# lvremove    </dev/vgname/lvname> }command.
+     Copy the backup file which is taken backup before removed the volume group from the above backup list and paste it in this command # vgcfgrestore    -f   <paste the above copied file name><vgname>
+     The logical volume is created automatically after restoring the volume group but the volume group and logical volumes both will be in inactive state. So, check the state of the volume group by #vgscanand the logical volume state by # lvscan  commands.
+     Then activate that volume group by textbf{# vgchange   -ay   <volume group name>commandand activate the logical volume by # lvchange    -ay   <logical volume name>command.
+     Mount the logical volume file system by \textbf{# mount   -a}  command
+     \textbf{Example : }\begin{itemize}
+                           \item # umount    <file system mount point>
+                           \item # vgcfgrestore    --list   <volume group name>	(copy the backup file from the list)
+                           \item # lvremove    </dev/vgname/lvname>
+                           \item# vgcfgrestore    -f   <paste the above copied file><volume group name>
+                           \item # vgscan 					(to check the status of the volume group)
+                           \item # lvscan						(to check the status of the logical volume)
+                           \item# vgchange    -ay   <volume group name>	:(activate the volume group if it is in inactive state)
+                           \item# lvchange     -ay   <logical volume name>	:(activate the logical volume if it is in inactive state)
+                        \end{itemize}
+                        Note:  The option   a   means active VG or LV  and option   y   means  yes.
+    
+                        
+   \bigskip
+   \bigskip
+
+   \item \textbf{How to change the volume group name and other parameters?}
+   \newline
+   Ans. \begin{itemize}
+          \item # vgrename    <existing volume group name><new volume group name>  (to rename the volume group)
+          \item By default, unlimited logical volumes can be created per volume group. But we can control this limit by
+          \item# vgchange    -l   <no.><volume group>	(to limit max. no. of logical volumes to the specified number)
+          \item Example :  # vgchange  -l  2  <vgname>	(to limit max. 2 logical volumes cab be created in this volume group)
+	        \item # vgchange   -p  <no.><volume group>	(to limit max. no. of physical volumes to the specified number)
+	        \item Example : # vgchange  -p  2  <vgname>	(to limit max. 2 physical volumes can be added to this volume group)
+	        \item # vgchange   -s  <block size in no.><volume group>		(to change the block size of the volume group)
+	        \item Example :  # vgchange   -s   4  <vgname>	(to change the volume group block size to 4MB)
+        \end{itemize}
+   \bigskip
+   \bigskip
+
+   \item \textbf{How to change the logical volume name and other parameters?}
+   \newline
+   Ans.\begin{itemize}
+         \item # lvrename   <existing lvname><new lvname>	(to rename the logical volume)
+         \item # lvchange   -pr  <logical volume>	(to put the logical volume into read only mode)
+         \item # lvs 				(to see the logical volume permissions)
+         \item # lvchange   -prw  <logical volume>	(to put the logical volume into read and write mode) 
+      \end{itemize}
+
+    \bigskip
+    \bigskip
+
+   \item \textbf{How to disable the volume group and logical volume?}
+   \newline
+   Ans.\begin{itemize}
+          \item # vgchange    -an    <volume group>	:(to disable the volume group)
+          # lvchange    -an    <logical volume>	:(to disable the logical volume)
+        \end{itemize}
+
+   \bigskip
+   \bigskip
+
+   \item \textbf{How to take a backup of the volume group?}
+   \newline
+   Ans.\begin{itemize}
+          \item # vgcfgbackup	:(to take a backup of all volume groups)
+          \item # vgcfgbackup   <volume group>	:(to take a backup of the specified volume group)
+        \end{{itemize}
+
+   \bigskip
+   \bigskip
+
+   \item \textbf{What is the configuration file of the logical volume?}
+   \newline
+   Ans.# cat  /etc/lvm/lvm.conf 		(to see the contents of the LVM configuration file)
+   
+   \bigskip
+   \bigskip
+
+   \item \textbf{What are the locations of the logical volume and volume groups?}
+   \newline
+   Ans. \begin{itemize}
+           \item # cd  /etc/lvm/backup		:(the logical volumes backup location)
+           \item # cd  /etc/lvm/archive		(:the volume groups backup location)
+        \end{itemize}
+
+   \bigskip
+   \bigskip
+
+   \item \textbf{How to know the current version of the LVM package?}
+   \newline
+   Ans.# rpm  -qa   lvm*	:(to know the current version of the LVM package)
+
+   \bigskip
+   \bigskip
+
+   \item \textbf{What are the attributes of the volume group?}
+   \newline
+   Ans.# vgs				(to see the attributes of the volume group)
+   \newline
+   [ The attributes are  w ---->  writable          z ---->  extendable            n ---->  normal ]
+   # vgs   -v 				(to check the UUID of the volume group)
+ 
+  \bigskip
+  \bigskip
+
+  \item \textbf{How to extend the logical volume to max. disk space and half of the disk space?}
+  \newline
+   Ans. # lvextend    -l  +100% FREE   <logical volume>	(to extend the logical volume by adding the volume group's  	   total available space)
+   \newline
+   # lvextend    -l  50%   <vgname><lvname>		(to extend the logical volume by adding the 50% free space    of the volume group)
+
+
+   \bigskip
+   \bigskip
+
+   \item \textbf{How to check on which physical volume the data is writing in the logical volume?}
+   \newline
+   Ans. # lvdisplay    -m  :( to check  on which physical volume the data is currently writing from all 				logical volumes)
+   # lvdisplay   -m   <lvname>	:(to check on which physical volume the data is writing from the Specified   logical volume)
+
+   \bigskip
+   \bigskip
+
+   \item \textbf{How many types of file systems available?}
+   \newline
+   Ans. \begin{itemize}
+           \item ext2 :Second extended file system (default in RHEL - 3 & 4)
+           \item ext3 :Third extended file system (default in RHEL - 5)
+           \item  ext4 :Fourth extended file system (default in RHEL - 6)
+           \item  xfs :Extended file system (default in RHEL - 7)
+           \item ufs  :Unix file system  (default in Solaris)	
+           \item jfs : Journal file system  (default in IBM-AIX)
+           \item hfs  : High performance file system (default in HP-UX)
+           \item vxfs : Veritas file system
+           \item procfs : Process file system (temporary)
+           \item tempfs :Temporary file system (temporary)
+           \item cdfs : Compact disk file system
+           \item hdfs : DVD file system
+           \item iso9660 :  To read the CD/DVD.iso image format files in Linux
+        \end{itemize}
+
+    \bigskip
+    \bigskip
+
+    \item \textbf{How to scan and detect the luns over the network?}
+    \newline
+    Ans.# ls  /sys/class/fc_host	:(to check the available fibre channels)
+      # echo  "---"   >  /sys/class/scsi_host/<lun no.>/scan:(to scan and detect the luns over the network)
+    
+    \bigskip
+    \bigskip
+
+    \item \textbf{How to mount a pen drive in Linux?}
+    \newline
+    Ans.\begin{itemize}
+           \item # lsusb or # fdisk -l  :(to know the pen drive name)
+           \item # mkdir  /mnt/pendrive	:(to create a mount point for pen drive)
+           \item# mount <pen drive name><mount point> :( to mount the pen drive on the above created mount point)
+           \item # cd /mnt/pendrive :(to access the pen drive)
+        \end{itemize}
+    
+    \bigskip
+    \bigskip
+
+    \item \textbf{How to mount a CD/DVD ROM drives in Linux?}
+    \newline
+    Ans.The CD/DVD ROM device name in Linux is  /dev/cdrom
+        \begin{itemize}
+          \item # mkdir /mnt/mycdrom	:(to create the mount point for CD/DVD)
+          \item # mount /dev/cdrom /mnt/mycdrom	:(to mount the CD/DVD on the above created mount point)
+          \item # cd /mnt/mycdrom :(to access the CD/DVD ROM drives)
+    
+    \bigskip
+    \bigskip
+
+    \item \textbf{How to mount the  " .iso "  image files in Linux?}
+    \newline
+    Ans.  \begin{itemize}
+            \item # mount   -t   iso9660    /root/rhel6.iso   /iso  -o  ro, loop	:(to mount the .iso image files)
+	          \item  # cdrecord   /root/Desktop/rhel6.iso 	: (to write the CD/DVD ROM. Before executing this 
+            \item command put the empty CD/DVD into CD/DVD drive)
+	          \item # eject  		:	(to eject the CD/DVD drive tray)
+	          \item # eject   -t	:	(to insert and close the CD/DVD drive tray)
+           \end{itemize}
+
+    \bigskip
+    \bigskip
+
+    \item \textbf{What is RAID? What is the use of the RAID and how many types of RAIDs available?}
+    \newline
+    Ans.RAID stands for Redundant Array of Independent Disks.It provides fault tolerance, load balancing using stripping, mirroring and parity concepts.
+        There are mainly two types of RAIDs available.
+        \begin{itemize}
+          \item Hardware RAID :(Depends on vendors and also more expensive)
+          \item  Software RAID :(Does not depends on vendors and less expensive when compared to Hardware 
+        \end{itemize}
+
+    \bigskip
+    \bigskip
+
+    \item \textbf{How many types of software RAIDs available and their requirements?}
+    \newline
+    Ans. \begin{enumerate}
+             \item RAID - 0    ----	Stripping    ----	Minimum 2 disks required
+             \item   RAID - 1    ----	Mirroring   ----	Minimum 2 disks required
+             \item  RAID - (1+0)  ---	Mirroring + Stripping ----  Minimum 4 disks required
+             \item  RAID - (0+1)  ---	Stripping + Mirroring ----  Minimum 4 disks required
+             \item  RAID - 5    ----	Stripping with parity ----	  Minimum 3 disks required
+          \end{enumerate}
+
+    \bigskip
+    \bigskip
+
+    \item \textbf{How to configure RAID - 0 in Linux?}
+    \newline
+    Ans.To configure RAID - 0, minimum 2 disks are required and the partition id is "fd".Reading and writing is very fast. So, it produces high performance.
+    if one disk is failed we cannot recover the data.
+    So, there is no redundancy and fault tolerance in RAID - 0.
+    Example :  For example if the data is 1, 2, 3, 4, 5 and 6 then ....
+    \newline
+    Disk - 1		         Disk - 2
+    If the Disk - 1 is /dev/sdb   and  the Disk - 2 is  /dev/sdc   then,
+    \begin{itemize}
+      \item # mdadm   -Cv  /dev/md0   -n  2   /dev/sdb    /dev/sdc   -l  0	(to create the RAID - 0 using disk - 1 and disk - 2)
+      \item # cat  /proc/mdstat				(to check the RAID - 0 is created or not)
+      \item# mkfs.ext4   /dev/md0  				(to create the ext4 file system on the RAID - 0)
+      \item# mkdir  /mnt/raid0				(to create the RAID - 0 mount point)
+      \item# mount   /dev/md0    /mnt/raid0			(to mount RAID - 0 on the mount point)
+      \item# mdadm   -D  /dev/md0				(to see the details of the RAID - 0 partition)
+      \item# mdadm    /dev/md0    -f   /dev/sdb		(to failed the disk manually)
+      \item# mdadm   /dev/md0    -r   /dev/sdb		(to remove the above failed disk)
+      \item# mdadm   /dev/md0    -a   /dev/sdd		(to add the new disk in place of failed disk)
+      \item# umount   /mnt/raid0				(to unmount the raid file system)
+      \item# mdadm   --stop   /dev/md0			(to stop the RAID - 0 volume)
+      \item# mdadm   /dev/md0   --add   /dev/sde		(to add third disk to the RAID - 0 volume)
+      \item# mdadm    --grow   /dev/md0   --raid_device=3	(to grow the RAID - 0 file system)
+    \end{itemize} 
+
+    \bigskip
+    \bigskip
+
+    \item \textbf{How to configure RAID - 1 in Linux?}
+    \newline
+    Ans. To configure RAID - 1, minimum 2 disks are required and the partition id is "fd".
+    In this the same data will be written on 2 disks ie., exact copy on both the disks.
+    if one disk is failed we can recover the data from another disk.
+    So, there is a high availability, redundancy and fault tolerance in RAID - 1.
+    In this writing speed is slow compared to RAID - 0.
+    Example :  For example if the data is 1, 2, 3, 4, 5 and 6 then ....
+    \newline
+    If the Disk - 1 is /dev/sdb   and  the Disk - 2 is  /dev/sdc   then,
+      \begin{itemize}
+        \item # mdadm   -Cv  /dev/md0   -n  2   /dev/sdb    /dev/sdc   -l  1	(to create the RAID - 1 using disk - 1 and disk - 2)
+        \item# cat  /proc/mdstat			(to check the RAID - 1 is created or not)
+        \item# mkfs.ext4   /dev/md0  			(to create the ext4 file system on the RAID - 1)
+        \item# mkdir  /mnt/raid1			(to create the RAID - 1 mount point)
+        \item# mount   /dev/md0    /mnt/raid1		(to mount RAID - 1 on the mount point)
+        \item# mdadm   -D  /dev/md0			(to see the details of the RAID - 1 partition)
+        \item# mdadm    /dev/md0    -f   /dev/sdb	(to failed the disk manually)
+        \item# mdadm   /dev/md0    -r   /dev/sdb	(to remove the above failed disk)
+        \item# mdadm   /dev/md0    -a   /dev/sdd	(to add the new disk in place of failed disk)
+        \item# umount   /mnt/raid1			(to unmount the raid file system)
+        \item# mdadm   --stop   /dev/md0		(to stop the RAID - 1 volume)
+        \item# mdadm   /dev/md0   --add   /dev/sde	(to add third disk to the RAID - 1 volume)
+        \item# mdadm    --grow   /dev/md0   --raid_device=3	(to grow the RAID - 1 file system)
+      \end{itemize}
+
+    \bigskip
+    \bigskip
+
+    \item \textbf{How to configure RAID - 5 in Linux?}
+    \newline
+    Ans.To configure RAID - 5, minimum 3 disks are required and the partition id is "fd".
+    In every disk approximately 25 - 30% of space is reserved for parity.
+    Reading and writing is very fast. So, it produces high performance.
+    This is used Stripping with parity concept.
+    if one disk is failed we can recover the data using remaining two disks and parity.
+    If two disks are failed, then we cannot recover the data.
+    So, there is no redundancy and fault tolerance in RAID - 5.
+    Example :  For example if the data is 1, 2, 3, 4, 5 and 6 then ....
+    \newline
+             Disk - 1	Disk - 2		  Disk - 3
+             If the Disk - 1 is /dev/sdb,   the Disk - 2 is  /dev/sdc  and  Disk - 3 is /dev/sddthen,
+     \begin{itemize}
+       \item # mdadm   -Cv  /dev/md0   -n  2   /dev/sdb    /dev/sdc   -l  5	(to create the RAID - 5 using disks - 1, 2  and 3)
+       \item# cat  /proc/mdstat			(to check the RAID - 5 is created or not)
+       \item# mkfs.ext4   /dev/md0  			(to create the ext4 file system on the RAID - 5)
+       \item# mkdir  /mnt/raid5			(to create the RAID - 5 mount point)
+       \item# mount   /dev/md0    /mnt/raid5		(to mount RAID - 5 on the mount point)
+       \item# mdadm   -D  /dev/md0			(to see the details of the RAID - 5 partition)
+       \item# mdadm    /dev/md0    -f   /dev/sdb	(to failed the disk manually)
+       \item# mdadm   /dev/md0    -r   /dev/sdb	(to remove the above failed disk)
+       \item# mdadm   /dev/md0    -a   /dev/sde	(to add the new disk in place of failed disk)
+       \item# umount   /mnt/raid5			(to unmount the raid file system)
+       \item# mdadm   --stop   /dev/md0		(to stop the RAID - 5 volume)
+       \item# mdadm   /dev/md0   --add   /dev/sdf	(to add fourth disk to the RAID - 5 volume)
+       \item# mdadm    --grow   /dev/md0   --raid_device=4	(to grow the RAID - 5 file system)
+     \end{itemize}
+
+    \bigskip
+    \bigskip
+
+    \item \textbf{What are the main advantages of RAID - 5}
+    \newline
+    Ans.RAID - 5 uses Stripping with parity and requires only three disks. Because of Stripping the data reading and 	writing will be fast.And by usingparity we can recover the data if one of the three disks failed. So, the main 	advantage of RAID - 5 we can get fast writing, reading and also redundancy fault tolerance with less expensive.
+
+    \bigskip
+    \bigskip
+
+    \item \textbf{How will you troubleshoot if one of the eight disks failed in LVM?}
+    \newline
+    Ans. First umount the file system and add the new disk with same size of the failed disk to the volume group. 	Then move the data from failed physical volume to newly added physical volume and then remove the failed physical volume from the volume group. And finally mount the file system.
+ 
+    \bigskip
+    \bigskip
+
+    \item \textbf{What is pvmove and when it is used in LVM?}
+    \newline
+    Ans.The pvmove command is used to move the data from failed physical volume to newly added physical volume. 	This command is used when one of the physical volume is failed in the LVM.
+
+    \bigskip
+    \bigskip
+
+    \item \textbf{How to inform the client and then troubleshoot if the disk is full?}
+    \newline
+    Ans.First check which files are accessing more disk space by \textbf{#du -h } |sort  - r command. if any temporary and junk files are present remove them from the disk to make a room for new or updated data. Then inform the actual 	situation to the client, take the permission from the client to get the lun from storage and extend the file system 	by adding that lun to the LVM.
+    
+    \bigskip
+    \bigskip
+
+    \item \textbf{Did you work on storage?}
+    \newline
+    Ans.Actually I did not work on storage but I know the procedure how to export the lun from storage to client using iSCSI target. Then scan that lun at cleint side and add the lun to the LVM. I also know the storage hardware from 	Emc square, Netapp and others. And I am dreaming to work on storage, cloud and virtualization.
+    
+    \bigskip
+    \bigskip
+
+    \item \textbf{I have four disks each 1TB in RAID - (1+0). So, total how much disk space can I utilize in that RAID – 
+    (1+0)?}
+    \newline
+    Ans.RAID - (1+0) means Mirroring + Stripping. It requires 4 disks, ie., 2 disks for mirroring and remaining 2 disks for 	stripping. And 5 - 10% disk space is used for superblock information. So, finally we can utilize 2TB - 2TB X 10% 	disk space in that RAID - (1+0).
+    
+    \bigskip
+    \bigskip
+
+    \item \textbf{If two disks failed in RAID - (1+0), can we recover the data?}
+    \newline
+    Ans.The RAID - (1+0) requires minimum 4 disks and it uses Mirroring + Stripping. If one disk is failed we can 
+    recover 	the data, but if two disks are failed we cannot recover the data.
+    
+    \bigskip
+    \bigskip
+
+    \item \textbf{How many types of disk space issues can we normally get?}
+    \newline
+    Ans . \begin{itemize}
+              \item Disk is full.
+              \item  Disk is failing or failed.
+              \item  File system corrupted or crashed.
+              \item  O/S is not recognizing the remote luns when scanning, ...etc.,
+          \end{itemize}
+
+    \bigskip
+    \bigskip
+
+    \item \textbf{What is a link file and how many types?}
+    \newline
+    Ans. Link file is a short cut file to the original file. Creating and removing  (deleting)  inks  between two files is known 	as managing links. There are two types of links files available in Linux.
+      \begin{itemize}
+        \item Soft link
+        \item 	Hard link
+      \end{itemize} 
+   
+    \bigskip
+    \bigskip
+
+    
+    
+    
       
 
+    
 
-   
-   
-   
+    
+    
+
 
   
-
-
-        
-
-  
-  
-
+ 
+   
+       
+   
 
           
     

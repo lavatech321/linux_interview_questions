@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1669811074 "c:/Users/Admin/Desktop/work/linux_interview_questions/main.tex" "main.pdf" "main" 1669811074
+["pdflatex"] 1669892554 "c:/Users/Admin/Desktop/work/linux_interview_questions/main.tex" "main.pdf" "main" 1669892554
   "C:/Users/Admin/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1669272909 82579 6dfd626a40d8527526d7a19ed8f15e62 ""
   "C:/Users/Admin/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1669272996 10804574 246597eb45f3a7fc92a103063acc2222 ""
   "C:/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc" 1458473887 4993 80dc9bab7f31fb78a000ccfed0e27cab ""
@@ -76,9 +76,9 @@
   "C:/Users/Admin/AppData/Local/Programs/MiKTeX/tex/latex/tools/verbatim.sty" 1654690828 7392 6cb60c76983625ab7344d128dbcdd881 ""
   "C:/Users/Admin/AppData/Local/Programs/MiKTeX/tex/latex/tools/xspace.sty" 1654690828 4545 4c279ac9292a1be8afa9ab2f1d3299c2 ""
   "c:/Users/Admin/Desktop/work/linux_interview_questions/main.tex" 1669797218 1198 897f71d23f8153e91b9f3cbce54d24b2 ""
-  "main.aux" 1669811074 34 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "main.aux" 1669892554 34 3985256e7290058c681f74d7a3565a19 "pdflatex"
   "main.tex" 1669797218 1198 897f71d23f8153e91b9f3cbce54d24b2 ""
-  "page1_10.tex" 1669811066 68113 654c73d02d5c53a96912385afafaf1d8 ""
+  "page1_10.tex" 1669892541 109972 e9bbb41ed620e1969cac1643a87caa33 ""
   (generated)
   "main.aux"
   "main.log"

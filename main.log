@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.24)  30 NOV 2022 17:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.24)  1 DEC 2022 16:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1890,19 +1890,3086 @@ l.1331   \item \textbf
 You've lost some text.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-) [48] (main.aux) ) 
+
+page1_10.tex:1341: LaTeX Error: Counter too large.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1341   \item \textbf
+                      {How to extend the root file system which is not on LVM?}
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+page1_10.tex:1348: LaTeX Error: Counter too large.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1348   \item \textbf
+                      {How to unmount a file system forcefully?}
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+page1_10.tex:1357: LaTeX Error: Counter too large.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1357   \item \textbf
+                      {How to know the file system type?}
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+page1_10.tex:1364: LaTeX Error: Counter too large.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1364   \item \textbf
+                      {How to know which file system occupy more space and t...
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[48]
+
+page1_10.tex:1371: LaTeX Error: Counter too large.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1371   \item \textbf
+                      {What is the command to know the mounted file systems?}
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+page1_10.tex:1373: You can't use `macro parameter character #' in horizontal mode.
+l.1373   Ans. mount    or  #
+                             cat  /etc/mtab
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+page1_10.tex:1378: LaTeX Error: Counter too large.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1378   \item \textbf
+                      {How to know whether the file system is corrupted or n...
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+page1_10.tex:1385: LaTeX Error: Counter too large.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1385   \item \textbf
+                      {How to recover if a file system is corrupted or crash...
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+page1_10.tex:1393: LaTeX Error: Counter too large.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1393   \item \textbf
+                      {How to create a file with particular size?}
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[49]
+
+page1_10.tex:1400: LaTeX Error: Counter too large.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1400   \item \textbf
+                      {How to find how many disk are attached to the system?}
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+page1_10.tex:1407: LaTeX Error: Counter too large.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1407   \item \textbf
+                      {What is journaling?}
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+page1_10.tex:1414: LaTeX Error: Counter too large.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1414   \item \textbf
+                      {How to repair the Superblock of the file system?}
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+page1_10.tex:1417: You can't use `macro parameter character #' in horizontal mode.
+l.1417 	 #
+           umount    <file system mount point>	(to unmount the file system)
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1418: You can't use `macro parameter character #' in horizontal mode.
+l.1418 	 #
+           dumpe2fs   </dev/vgname/lvname>  | grep  superblock    (to list t...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1419: You can't use `macro parameter character #' in horizontal mode.
+l.1419 	 #
+           e2fsck   -b   <copy and paste the secondary super block from the ...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1421: You can't use `macro parameter character #' in horizontal mode.
+l.1421 	 #
+           mount   -a 	(to mount the file system)
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+Overfull \hbox (2.93596pt too wide) in paragraph at lines 1414--1422
+\T1/pplx/m/n/10 mount the fi-le sys-tem)  dum-pe2fs </de-v/v-gna-me/lv-
+ []
+
+
+Overfull \hbox (21.67595pt too wide) in paragraph at lines 1414--1422
+\T1/pplx/m/n/10 su-per block from the abo-ve list></dev/vgname/lvname>
+ []
+
+
+page1_10.tex:1426: LaTeX Error: Counter too large.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1426   \item \textbf
+                      {How to create the file systems with the user specifie...
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+page1_10.tex:1428: You can't use `macro parameter character #' in horizontal mode.
+l.1428   Ans. #
+                mkfs.ext4   -m  <no.><partition name>	(to format the partiti...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+[50]
+
+page1_10.tex:1433: LaTeX Error: Counter too large.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1433   \item \textbf
+                      {How to modify the superblock reserve space?}
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+page1_10.tex:1435: You can't use `macro parameter character #' in horizontal mode.
+l.1435   Ans. #
+                tune2fs   -m  <no.><partition name>	(to modify the  superblo...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+page1_10.tex:1440: LaTeX Error: Counter too large.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1440   \item \textbf
+                      {How to modify the superblock reserve space?}
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[51]
+page1_10.tex:1456: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.1456       \item #
+                     umount   -a :(to unmount all the file systems except ( ...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1458: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.1458       \item #
+                     fsck   -A 	:	(to run fsck on all file systems)
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1459: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.1459       \item #
+                     fsck   -AR   -y 	:	(to run fsck without asking any ques...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1460: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.1460       \item#
+                    fsck   -AR   -t   ext3   -y	:	(to run fsck on all ext3 f...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1461: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.1461       \item#
+                    fsck   -n   /dev/sdb1	:(to see the /dev/sdb1 file system...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1462: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.1462       \item #
+                     tune2fs   -l   /dev/sdb1	:	(to check whether the journa...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+Overfull \hbox (1.95593pt too wide) in paragraph at lines 1462--1463
+[]\T1/pplx/m/n/10 tune2fs -l /de-v/sdb1 : (to check whe-ther the jour-
+ []
+
+page1_10.tex:1463: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.1463       \item#
+                    tune2fs   -j   /dev/sdb1	:	(to convert ext2 file system ...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1464: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.1464       \item#
+                    tune2fs   -l   /dev/sdb1	:	(to check whether the journal...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+Overfull \hbox (1.95593pt too wide) in paragraph at lines 1464--1465
+[]\T1/pplx/m/n/10 tune2fs -l /de-v/sdb1 : (to check whe-ther the jour-
+ []
+
+page1_10.tex:1465: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.1465       \item #
+                     tune2fs   -O  ^has_journal   /dev/sdb1	:(to convert ext...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1465: Missing $ inserted.
+<inserted text> 
+                $
+l.1465       \item # tune2fs   -O  ^
+                                    has_journal   /dev/sdb1	:(to convert ext...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+page1_10.tex:1466: LaTeX Error: Command \item invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1466       \item
+                   # tune2fs   -O  dir_index, has_journal, unit_bg   /dev/sd...
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+page1_10.tex:1466: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1466       \item #
+                     tune2fs   -O  dir_index, has_journal, unit_bg   /dev/sd...
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+page1_10.tex:1466: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1466       \item #
+                     tune2fs   -O  dir_index, has_journal, unit_bg   /dev/sd...
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+page1_10.tex:1466: You can't use `macro parameter character #' in math mode.
+<recently read> ##
+                  
+l.1466       \item #
+                     tune2fs   -O  dir_index, has_journal, unit_bg   /dev/sd...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+page1_10.tex:1467: LaTeX Error: Command \item invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1467       \item
+                  # tune2fs   -O  extents, dir_index, unit_bg   /dev/sdb1 	:...
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+page1_10.tex:1467: Missing $ inserted.
+<inserted text> 
+                $
+l.1467       \item#
+                    tune2fs   -O  extents, dir_index, unit_bg   /dev/sdb1 	:...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+page1_10.tex:1467: Missing } inserted.
+<inserted text> 
+                }
+l.1467       \item#
+                    tune2fs   -O  extents, dir_index, unit_bg   /dev/sdb1 	:...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (161.82356pt too wide) in paragraph at lines 1465--1467
+[]\T1/pplx/m/n/10 tune2fs -O $[]\OML/zplm/m/it/10 as[]ournal\OT1/zplm/m/n/10 /\OML/zplm/m/it/10 dev\OT1/zplm/m/n/10 /\OML/zplm/m/it/10 sdb\OT1/pplx/m/n/10 1 \OT1/zplm/m/n/10 : (\OML/zplm/m/it/10 toconvertext\OT1/pplx/m/n/10 3\OML/zplm/m/it/10 filesystemtoext\OT1/pplx/m/n/10 2\OML/zplm/m/it/10 filesystem\OT1/zplm/m/n/10 )\OML/zplm/m/it/10 tune\OT1/pplx/m/n/10 2\OML/zplm/m/it/10 fs \OMS/zplm/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (150.48161pt too wide) in paragraph at lines 1465--1467
+\OML/zplm/m/it/10 Odir[]ndex\OT1/pplx/m/n/10 , \OML/zplm/m/it/10 has[]ournal\OT1/pplx/m/n/10 , \OML/zplm/m/it/10 unit[]g\OT1/zplm/m/n/10 /\OML/zplm/m/it/10 dev\OT1/zplm/m/n/10 /\OML/zplm/m/it/10 sdb\OT1/pplx/m/n/10 1 \OT1/zplm/m/n/10 : (\OML/zplm/m/it/10 toconvertext\OT1/pplx/m/n/10 2\OML/zplm/m/it/10 filesystemtoext\OT1/pplx/m/n/10 4\OML/zplm/m/it/10 filesystem\OT1/zplm/m/n/10 )[][]$ 
+ []
+
+page1_10.tex:1467: Extra }, or forgotten \endgroup.
+\par ...m \@noitemerr {\@@par }\fi \else {\@@par }
+                                                  \fi 
+l.1467       \item#
+                    tune2fs   -O  extents, dir_index, unit_bg   /dev/sdb1 	:...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+page1_10.tex:1467: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.1467       \item#
+                    tune2fs   -O  extents, dir_index, unit_bg   /dev/sdb1 	:...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1467: Missing $ inserted.
+<inserted text> 
+                $
+l.1467       \item# tune2fs   -O  extents, dir_
+                                               index, unit_bg   /dev/sdb1 	:...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+page1_10.tex:1468: LaTeX Error: Command \item invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1468       \item
+                  # mount   -o  remount, rw    /dev/sdb1	:(to mount the part...
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+page1_10.tex:1468: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1468       \item#
+                    mount   -o  remount, rw    /dev/sdb1	:(to mount the part...
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+page1_10.tex:1468: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1468       \item#
+                    mount   -o  remount, rw    /dev/sdb1	:(to mount the part...
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+page1_10.tex:1468: You can't use `macro parameter character #' in math mode.
+<recently read> ##
+                  
+l.1468       \item#
+                    mount   -o  remount, rw    /dev/sdb1	:(to mount the part...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+page1_10.tex:1469: LaTeX Error: Command \item invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1469       \item
+                  # mount   -o  remount, ro    /dev/sdb1:	(to mount the part...
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+page1_10.tex:1469: Missing $ inserted.
+<inserted text> 
+                $
+l.1469       \item#
+                    mount   -o  remount, ro    /dev/sdb1:	(to mount the part...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+page1_10.tex:1469: Missing } inserted.
+<inserted text> 
+                }
+l.1469       \item#
+                    mount   -o  remount, ro    /dev/sdb1:	(to mount the part...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (149.28468pt too wide) in paragraph at lines 1467--1469
+[]\T1/pplx/m/n/10 tune2fs -O ex-tents, dir$[]\OML/zplm/m/it/10 ndex\OT1/pplx/m/n/10 , \OML/zplm/m/it/10 unit[]g\OT1/zplm/m/n/10 /\OML/zplm/m/it/10 dev\OT1/zplm/m/n/10 /\OML/zplm/m/it/10 sdb\OT1/pplx/m/n/10 1 \OT1/zplm/m/n/10 : (\OML/zplm/m/it/10 toconvertext\OT1/pplx/m/n/10 3\OML/zplm/m/it/10 filesystemtoext\OT1/pplx/m/n/10 4\OML/zplm/m/it/10 filesystem\OT1/zplm/m/n/10 )\OML/zplm/m/it/10 mount \OMS/zplm/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (54.39471pt too wide) in paragraph at lines 1467--1469
+\OML/zplm/m/it/10 oremount\OT1/pplx/m/n/10 , \OML/zplm/m/it/10 rw\OT1/zplm/m/n/10 /\OML/zplm/m/it/10 dev\OT1/zplm/m/n/10 /\OML/zplm/m/it/10 sdb\OT1/pplx/m/n/10 1 \OT1/zplm/m/n/10 : (\OML/zplm/m/it/10 tomountthepartitionwithreadandwritepermissions\OT1/zplm/m/n/10 )[][]$ 
+ []
+
+page1_10.tex:1469: Extra }, or forgotten \endgroup.
+\par ...m \@noitemerr {\@@par }\fi \else {\@@par }
+                                                  \fi 
+l.1469       \item#
+                    mount   -o  remount, ro    /dev/sdb1:	(to mount the part...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+page1_10.tex:1469: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.1469       \item#
+                    mount   -o  remount, ro    /dev/sdb1:	(to mount the part...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1470: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.1470       \item #
+                     mount   < directory name>  :		 (to check whether this d...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+[52]
+page1_10.tex:1472: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.1472       \item #
+                     fdisk   -l 	:(to list total hard disks attached to syst...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1473: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.1473       \item #
+                     fuser   -cu   <device or partition name> :(to see the u...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1474: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.1474       \item #
+                     fuser   -cK   <device or partition name>  :(to kill the...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1477: You can't use `macro parameter character #' in horizontal mode.
+<argument> lsof <mount point> ##
+                                 kill -9 <process id>
+l.1477 ...unt point>   # kill   -9   <process id>}
+                                                   killthose processesforcef...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1478: You can't use `macro parameter character #' in horizontal mode.
+l.1478     #
+             journalctl	(It tracks all the log files between two different t...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1482: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.1482         \item #
+                       mkdir    -p    /var/log/journal	:(to make a directory...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+Overfull \hbox (2.08595pt too wide) in paragraph at lines 1485--1486
+\T1/pplx/m/n/10 kill old /run/log pro-cess and the lo-ca-ti-on of jour-
+ []
+
+[53]
+page1_10.tex:1486: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.1486         \item #
+                       journalctl    -n    5		:	(to display last five lines ...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1487: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.1487         \item #
+                       journalctl    -p   err		:	(to display all the error m...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1492: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.1492         \item #
+                       auditctl	:(to see the audit report).
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+[54] [55]
+page1_10.tex:1539: You can't use `macro parameter character #' in horizontal mode.
+l.1539 ...make the 			required partitions using  #
+                                                   fdisk command and change ...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1543: Illegal parameter number in definition of \reserved@b.
+<to be read again> 
+                   }
+l.1543 ...lume group name><physical volume names>}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+page1_10.tex:1543: You can't use `macro parameter character #' in horizontal mode.
+<recently read> ##
+                  
+l.1543 ...lume group name><physical volume names>}
+                                                  
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+Overfull \hbox (2.01591pt too wide) in paragraph at lines 1541--1544
+[]\T1/pplx/m/n/10 Then crea-te the vo-lu-me group by com-bi-ning phy-
+ []
+
+
+Overfull \hbox (11.6354pt too wide) in paragraph at lines 1541--1544
+\T1/pplx/b/n/10 <PE si-ze in MBs><volume group na-me><physical
+ []
+
+page1_10.tex:1546: Illegal parameter number in definition of \reserved@b.
+<to be read again> 
+                   }
+l.1546 ...logical volume name><volume group name>}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+page1_10.tex:1546: You can't use `macro parameter character #' in horizontal mode.
+<recently read> ##
+                  
+l.1546 ...logical volume name><volume group name>}
+                                                  
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+Overfull \hbox (0.38533pt too wide) in paragraph at lines 1544--1547
+\T1/pplx/m/n/10 ted vo-lu-me group by, \T1/pplx/b/n/10 lv-crea-te -L +<si-ze in MBs>
+ []
+
+
+Overfull \hbox (2.90598pt too wide) in paragraph at lines 1547--1551
+\T1/pplx/m/n/10 vo-lu-me by, \T1/pplx/b/n/10 mkfs.ext2/ext3/ext4/xfs /de-v/<volume
+ []
+
+[56]
+Overfull \hbox (4.45522pt too wide) in paragraph at lines 1551--1557
+[]\T1/pplx/m/n/10 Mount the LVM on the abo-ve crea-ted mount point
+ []
+
+page1_10.tex:1571: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.1571            \item #
+                         pvscan    <PV name>	:(to scan the specified physica...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+[57]
+page1_10.tex:1581: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.1581           \item#
+                        vgdisplay :(displays all volume groups with more det...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1582: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.1582           \item #
+                         vgdisplay   <VG name>	:(displays the specified volu...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1583: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.1583           \item#
+                        vgscan 	:(to scan all the volume groups)
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1584: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.1584           \item#
+                        vgscan    <VG name>:(to scan the specified volume gr...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1594: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.1594            \item #
+                          lvdisplay :(displays all logical volumes with more...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1595: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.1595            \item #
+                          lvdisplay   <LV name>:(displays the specified logi...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1596: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.1596            \item #
+                          lvscan	:(to scan all the logical volumes)
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1597: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.1597            \item #
+                          lvscan    <LV name>	: (to scan the specified logic...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1606: Illegal parameter number in definition of \reserved@b.
+<to be read again> 
+                   }
+l.1606 ... a new partition using \textbf{# fdisk }
+                                                  command and make sure that...
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+page1_10.tex:1606: You can't use `macro parameter character #' in horizontal mode.
+<recently read> ##
+                  
+l.1606 ... a new partition using \textbf{# fdisk }
+                                                  command and make sure that...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1606: Illegal parameter number in definition of \reserved@b.
+<to be read again> 
+                   }
+l.1606 ... partition table by \textbf{# partprobe}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+page1_10.tex:1606: You can't use `macro parameter character #' in horizontal mode.
+<recently read> ##
+                  
+l.1606 ... partition table by \textbf{# partprobe}
+                                                  
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1608: Illegal parameter number in definition of \reserved@b.
+<to be read again> 
+                   }
+l.1608 ...ted partition using \textbf{ # pvcreate}
+                                                   command.
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+page1_10.tex:1608: You can't use `macro parameter character #' in horizontal mode.
+<argument>  ##
+               pvcreate
+l.1608 ...ted partition using \textbf{ # pvcreate}
+                                                   command.
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1609: Illegal parameter number in definition of \reserved@b.
+<to be read again> 
+                   }
+l.1609 ... volume group using \textbf{# vgextend }
+                                                  command
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+page1_10.tex:1609: You can't use `macro parameter character #' in horizontal mode.
+<recently read> ##
+                  
+l.1609 ... volume group using \textbf{# vgextend }
+                                                  command
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1610: You can't use `macro parameter character #' in horizontal mode.
+l.1610     Example :  #
+                        fdisk   /dev/sdb
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+[58]
+page1_10.tex:1621: You can't use `macro parameter character #' in horizontal mode.
+l.1621 	          #
+                    pvcreate   /dev/sdb1
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1622: You can't use `macro parameter character #' in horizontal mode.
+l.1622 	          #
+                    vgextend   <VG name>   /dev/sdb1
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1623: You can't use `macro parameter character #' in horizontal mode.
+l.1623 	          #
+                    vgdisplay   <VG name>	:(to check the size of the volume ...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1632: Illegal parameter number in definition of \reserved@b.
+<to be read again> 
+                   }
+l.1632 ...olume by \textbf{# lvdisplay  <LV name>}
+                                                  and the size of the file s...
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+page1_10.tex:1632: You can't use `macro parameter character #' in horizontal mode.
+<recently read> ##
+                  
+l.1632 ...olume by \textbf{# lvdisplay  <LV name>}
+                                                  and the size of the file s...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1632: You can't use `macro parameter character #' in horizontal mode.
+l.1632 ...me>}and the size of the file system by #
+                                                   df -hT  command.
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1633: Illegal parameter number in definition of \reserved@b.
+<to be read again> 
+                   }
+l.1633 ...ume by \textbf{# lvextend or # lvresize}
+                                                  commands.
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+page1_10.tex:1633: You can't use `macro parameter character #' in horizontal mode.
+<recently read> ##
+                  
+l.1633 ...ume by \textbf{# lvextend or # lvresize}
+                                                  commands.
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1633: You can't use `macro parameter character #' in horizontal mode.
+<argument> ## lvextend or ##
+                             lvresize
+l.1633 ...ume by \textbf{# lvextend or # lvresize}
+                                                  commands.
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1634: Illegal parameter number in definition of \reserved@b.
+<to be read again> 
+                   }
+l.1634 ... by \textbf{# resize2fs or # xfs_growfs}
+                                                   commands.
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+page1_10.tex:1634: You can't use `macro parameter character #' in horizontal mode.
+<recently read> ##
+                  
+l.1634 ... by \textbf{# resize2fs or # xfs_growfs}
+                                                   commands.
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1634: You can't use `macro parameter character #' in horizontal mode.
+<argument> ## resize2fs or ##
+                              xfs_growfs
+l.1634 ... by \textbf{# resize2fs or # xfs_growfs}
+                                                   commands.
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1634: Missing $ inserted.
+<inserted text> 
+                $
+l.1634 ... by \textbf{# resize2fs or # xfs_growfs}
+                                                   commands.
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+page1_10.tex:1634: Extra }, or forgotten $.
+<recently read> \egroup 
+                        
+l.1634 ... by \textbf{# resize2fs or # xfs_growfs}
+                                                   commands.
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+page1_10.tex:1635: You can't use `macro parameter character #' in math mode.
+l.1635     Example :   #
+                         df   -hT
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1636: You can't use `macro parameter character #' in math mode.
+l.1636 			#
+            lvextend    -L   +<size in MB></dev/vgname/lvname>    or
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1637: You can't use `macro parameter character #' in math mode.
+l.1637 			#
+            lvresize   -L   +<size in MB></dev/vgname/lvname>
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1638: You can't use `macro parameter character #' in math mode.
+l.1638 			#
+            resize2fs    </dev/vgname/lvname>
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1639: You can't use `macro parameter character #' in math mode.
+l.1639 			#
+            lvdisplay   </dev/vgname/lvname>:(to check the size of the logic...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1640: You can't use `macro parameter character #' in math mode.
+l.1640 			#
+            df    -hT	:(to check the size of the file system)
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1641: Missing $ inserted.
+<inserted text> 
+                $
+l.1641 
+       
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+page1_10.tex:1641: Missing } inserted.
+<inserted text> 
+                }
+l.1641 
+       
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (12.29977pt too wide) in paragraph at lines 1628--1641
+\T1/pplx/b/n/10 xfs$[]\OML/zplm/m/it/10 rowfscommands\OT1/pplx/m/n/10 .\OML/zplm/m/it/10 Example \OT1/zplm/m/n/10 : \OML/zplm/m/it/10 df \OMS/zplm/m/n/10 ^^@ \OML/zplm/m/it/10 hTlvextend \OMS/zplm/m/n/10 ^^@ \OML/zplm/m/it/10 L\OT1/zplm/m/n/10 + \OML/zplm/m/it/10 <
+ []
+
+
+Overfull \hbox (20.93834pt too wide) in paragraph at lines 1628--1641
+\OML/zplm/m/it/10 L\OT1/zplm/m/n/10 + \OML/zplm/m/it/10 < sizeinMB >< \OT1/zplm/m/n/10 /\OML/zplm/m/it/10 dev\OT1/zplm/m/n/10 /\OML/zplm/m/it/10 vgname\OT1/zplm/m/n/10 /\OML/zplm/m/it/10 lvname > resize\OT1/pplx/m/n/10 2\OML/zplm/m/it/10 fs <
+ []
+
+
+Overfull \hbox (45.19295pt too wide) in paragraph at lines 1628--1641
+\OT1/zplm/m/n/10 /\OML/zplm/m/it/10 dev\OT1/zplm/m/n/10 /\OML/zplm/m/it/10 vgname\OT1/zplm/m/n/10 /\OML/zplm/m/it/10 lvname > lvdisplay < \OT1/zplm/m/n/10 /\OML/zplm/m/it/10 dev\OT1/zplm/m/n/10 /\OML/zplm/m/it/10 vgname\OT1/zplm/m/n/10 /\OML/zplm/m/it/10 lvname >\OT1/zplm/m/n/10 :
+ []
+
+
+Overfull \hbox (99.13605pt too wide) in paragraph at lines 1628--1641
+\OT1/zplm/m/n/10 (\OML/zplm/m/it/10 tocheckthesizeofthelogicalvolume\OT1/zplm/m/n/10 )\OML/zplm/m/it/10 df \OMS/zplm/m/n/10 ^^@ \OML/zplm/m/it/10 hT \OT1/zplm/m/n/10 : (\OML/zplm/m/it/10 tocheckthesizeofthefilesystem\OT1/zplm/m/n/10 )[]$ 
+ []
+
+[59]
+page1_10.tex:1649: You can't use `macro parameter character #' in horizontal mode.
+l.1649     unmount the file system by #
+                                        \textbf{umount   <file system mount ...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1650: Illegal parameter number in definition of \reserved@b.
+<to be read again> 
+                   }
+l.1650 ...   <device or partition name>  command.}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+page1_10.tex:1650: You can't use `macro parameter character #' in horizontal mode.
+<recently read> ##
+                  
+l.1650 ...   <device or partition name>  command.}
+                                                  
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1651: You can't use `macro parameter character #' in horizontal mode.
+l.1651     Reduce the logical volume by #
+                                          lvreduce   \textbf{-L   - <Size of...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1652: You can't use `macro parameter character #' in horizontal mode.
+l.1652     Then update the file system by #
+                                            resize2fs    </dev/vgname/lvname>
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1653: You can't use `macro parameter character #' in horizontal mode.
+l.1653     Finally mount the file system by #
+                                              mount  -a
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1654: You can't use `macro parameter character #' in horizontal mode.
+l.1654     Example:#
+                     umount    <file system mount point>
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1655: You can't use `macro parameter character #' in horizontal mode.
+l.1655      #
+              e2fsck   <device or partition name>
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1656: You can't use `macro parameter character #' in horizontal mode.
+l.1656       #
+               lvreduce   -L   -<size in MB></dev/vgname/lvname>
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1657: You can't use `macro parameter character #' in horizontal mode.
+l.1657      #
+              resize2fs   </dev/vgname/lvname>
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1658: You can't use `macro parameter character #' in horizontal mode.
+l.1658      #
+              lvdisplay   </dev/vgname/lvname>	:(to check the size of the lo...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1659: You can't use `macro parameter character #' in horizontal mode.
+l.1659      #
+              mount   -a   :(to mount the file system)
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1660: You can't use `macro parameter character #' in horizontal mode.
+l.1660      #
+              df    -hT 		:(to check the size of the file system)
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+Overfull \hbox (45.54536pt too wide) in paragraph at lines 1645--1661
+\T1/pplx/m/n/10 lu-me by  lvre-du-ce \T1/pplx/b/n/10 -L - <Si-ze of in MB></dev/vgname/lvname>
+ []
+
+page1_10.tex:1669: You can't use `macro parameter character #' in horizontal mode.
+l.1669 ...ify the size of the physical volume by #
+                                                  pvs   or   \textbf{#pvdisp...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1669: Illegal parameter number in definition of \reserved@b.
+<to be read again> 
+                   }
+l.1669 ... or   \textbf{#pvdisplay   </dev/vgname}
+                                                  /lvname>command.
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+page1_10.tex:1669: You can't use `macro parameter character #' in horizontal mode.
+<recently read> ##
+                  
+l.1669 ... or   \textbf{#pvdisplay   </dev/vgname}
+                                                  /lvname>command.
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1670: Illegal parameter number in definition of \reserved@b.
+<to be read again> 
+                   }
+l.1670 ...bf{# umount   <file system mount point>}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+page1_10.tex:1670: You can't use `macro parameter character #' in horizontal mode.
+<recently read> ##
+                  
+l.1670 ...bf{# umount   <file system mount point>}
+                                                  
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1672: Illegal parameter number in definition of \reserved@b.
+<to be read again> 
+                   }
+l.1672 ...olume using  \textbf{# pvmove  <old PV>}
+                                                  <new PV>
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+page1_10.tex:1672: You can't use `macro parameter character #' in horizontal mode.
+<recently read> ##
+                  
+l.1672 ...olume using  \textbf{# pvmove  <old PV>}
+                                                  <new PV>
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1674: You can't use `macro parameter character #' in horizontal mode.
+l.1674 ...move the failed the physical volume by #
+                                                  vgreduce  \textbf{ <vgname...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+Overfull \hbox (6.28598pt too wide) in paragraph at lines 1665--1675
+\T1/pplx/b/n/10 play </de-v/v-gna-me\T1/pplx/m/n/10 /lvname>command. Un-mount the
+ []
+
+[60]
+page1_10.tex:1676: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.1676                    \item #
+                                  cd   <file system mount point>
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1678: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.1678                    \item #
+                                  pvs   <pvname>    or   # pvdisplay   <pvname>
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1678: You can't use `macro parameter character #' in horizontal mode.
+l.1678 ...        \item # pvs   <pvname>    or   #
+                                                   pvdisplay   <pvname>
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1679: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.1679                    \item #
+                                  umount   <file system mount point>
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1680: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.1680                    \item #
+                                  pvcreate   <device or partition name>
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1681: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.1681                    \item #
+                                 vgextend    <vgname><pvname>
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1682: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.1682                    \item #
+                                  pvmove   <old pvname><new pvname>
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1683: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.1683                    \item #
+                                  mount   -a
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1684: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.1684                    \item #
+                                  vgreduce    <vgname><failed pvname>
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1685: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.1685                    \item #
+                                  cd   <file system mount point>
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1686: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.1686                    \item #
+                                  ls
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+[61]
+page1_10.tex:1694: Illegal parameter number in definition of \reserved@b.
+<to be read again> 
+                   }
+l.1694 ...tem by \textbf{# umount   <mount point>}
+                                                  Remove the entry in /etc/f...
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+page1_10.tex:1694: You can't use `macro parameter character #' in horizontal mode.
+<recently read> ##
+                  
+l.1694 ...tem by \textbf{# umount   <mount point>}
+                                                  Remove the entry in /etc/f...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1695: Illegal parameter number in definition of \reserved@b.
+<to be read again> 
+                   }
+l.1695 ...vremove    </dev/vgname/lvname>command.}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+page1_10.tex:1695: You can't use `macro parameter character #' in horizontal mode.
+<recently read> ##
+                  
+l.1695 ...vremove    </dev/vgname/lvname>command.}
+                                                  
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1696: Illegal parameter number in definition of \reserved@b.
+<to be read again> 
+                   }
+l.1696 ...tbf{# lvs   or   # lvdisplay   command.}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+page1_10.tex:1696: You can't use `macro parameter character #' in horizontal mode.
+<recently read> ##
+                  
+l.1696 ...tbf{# lvs   or   # lvdisplay   command.}
+                                                  
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1696: You can't use `macro parameter character #' in horizontal mode.
+<argument> ## lvs or ##
+                        lvdisplay command.
+l.1696 ...tbf{# lvs   or   # lvdisplay   command.}
+                                                  
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1697: You can't use `macro parameter character #' in horizontal mode.
+l.1697     Example : 	#
+                        umount   <file system mount point>
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1698: You can't use `macro parameter character #' in horizontal mode.
+l.1698 			#
+            vim /etc/fstab  :(delete the entry of the logical volume)
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1700: You can't use `macro parameter character #' in horizontal mode.
+l.1700 			#
+            lvremove    </dev/vgname/lvname>
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1701: You can't use `macro parameter character #' in horizontal mode.
+l.1701 			#
+            lvs    or    # lvdisplay :(to verify whether logical volume is r...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1701: You can't use `macro parameter character #' in horizontal mode.
+l.1701 			# lvs    or    #
+                           lvdisplay :(to verify whether logical volume is r...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+Overfull \hbox (20.84601pt too wide) in paragraph at lines 1692--1702
+\T1/pplx/m/n/10 mount the fi-le sys-tem by  \T1/pplx/b/n/10 um-ount <mount point>\T1/pplx/m/n/10 Remove
+ []
+
+page1_10.tex:1709: You can't use `macro parameter character #' in horizontal mode.
+l.1709 ...n delete or remove the volume group by #
+                                                   vgremove    <vgname>command.
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1710: You can't use `macro parameter character #' in horizontal mode.
+l.1710 ...r the volume group is remove or not by #
+                                                   vgs    or    # vgdisplay ...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1710: You can't use `macro parameter character #' in horizontal mode.
+l.1710 ...oup is remove or not by # vgs    or    #
+                                                   vgdisplay   command.
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1711: You can't use `macro parameter character #' in horizontal mode.
+l.1711     Example : 	#
+                        umount     <file system mount point>	:	(to unmount t...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1712: You can't use `macro parameter character #' in horizontal mode.
+l.1712 			#
+            vim   /etc/fstab 	:(delete the entry of the logical volume)
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1714: You can't use `macro parameter character #' in horizontal mode.
+l.1714 			#
+            vgremove     <vgname>
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1715: You can't use `macro parameter character #' in horizontal mode.
+l.1715 			#
+            vgs     or     # vgdisplay :(to verify whether volume group is r...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1715: You can't use `macro parameter character #' in horizontal mode.
+l.1715 			# vgs     or     #
+                             vgdisplay :(to verify whether volume group is r...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1723: Illegal parameter number in definition of \reserved@b.
+<to be read again> 
+                   }
+l.1723 ...olume by \textbf{# pvremove    <pvname>}
+                                                  command Verify whether the...
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+page1_10.tex:1723: You can't use `macro parameter character #' in horizontal mode.
+<recently read> ##
+                  
+l.1723 ...olume by \textbf{# pvremove    <pvname>}
+                                                  command Verify whether the...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1723: You can't use `macro parameter character #' in horizontal mode.
+l.1723 ...e physical volume is removed or not by #
+                                                   pvs    or     #pvdisplay ...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1723: You can't use `macro parameter character #' in horizontal mode.
+l.1723 ...e is removed or not by # pvs    or     #
+                                                  pvdisplay    command.
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1724: You can't use `macro parameter character #' in horizontal mode.
+l.1724 	  Example :  #
+                       pvremove   <pvname>
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1725: You can't use `macro parameter character #' in horizontal mode.
+l.1725 			#
+            pvs    or     #pvdisplay	:(to verify whether the physical volume...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1725: You can't use `macro parameter character #' in horizontal mode.
+l.1725 			# pvs    or     #
+                           pvdisplay	:(to verify whether the physical volume...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+[62]
+page1_10.tex:1732: Illegal parameter number in definition of \reserved@b.
+<to be read again> 
+                   }
+l.1732 ...f{# umount   <file system mount point> }
+                                                   command.Check the volume ...
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+page1_10.tex:1732: You can't use `macro parameter character #' in horizontal mode.
+<recently read> ##
+                  
+l.1732 ...f{# umount   <file system mount point> }
+                                                   command.Check the volume ...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1732: You can't use `macro parameter character #' in horizontal mode.
+l.1732 ....Check the volume group backup list by #
+                                                   vgcfgrestore    --list   ...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1733: Illegal parameter number in definition of \reserved@b.
+<to be read again> 
+                   }
+l.1733 ...tbf{# lvremove    </dev/vgname/lvname> }
+                                                  command.
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+page1_10.tex:1733: You can't use `macro parameter character #' in horizontal mode.
+<recently read> ##
+                  
+l.1733 ...tbf{# lvremove    </dev/vgname/lvname> }
+                                                  command.
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1734: You can't use `macro parameter character #' in horizontal mode.
+l.1734 ...ckup list and paste it in this command #
+                                                   vgcfgrestore    -f   <pas...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1735: You can't use `macro parameter character #' in horizontal mode.
+l.1735 ...check the state of the volume group by #
+                                                  vgscanand the logical volu...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1735: You can't use `macro parameter character #' in horizontal mode.
+l.1735 ...#vgscanand the logical volume state by #
+                                                   lvscan  commands.
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1736: You can't use `macro parameter character #' in horizontal mode.
+l.1736 ...n activate that volume group by textbf{#
+                                                   vgchange   -ay   <volume ...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1736: You can't use `macro parameter character #' in horizontal mode.
+l.1736 ...mandand activate the logical volume by #
+                                                   lvchange    -ay   <logica...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1737: Illegal parameter number in definition of \reserved@b.
+<to be read again> 
+                   }
+l.1737 ...ume file system by \textbf{# mount   -a}
+                                                    command
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+page1_10.tex:1737: You can't use `macro parameter character #' in horizontal mode.
+<recently read> ##
+                  
+l.1737 ...ume file system by \textbf{# mount   -a}
+                                                    command
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+[63]
+page1_10.tex:1739: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.1739                            \item #
+                                          umount    <file system mount point>
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1740: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.1740                            \item #
+                                          vgcfgrestore    --list   <volume g...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1741: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.1741                            \item #
+                                          lvremove    </dev/vgname/lvname>
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1742: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.1742                            \item#
+                                         vgcfgrestore    -f   <paste the abo...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+Overfull \hbox (17.18591pt too wide) in paragraph at lines 1742--1743
+[]\T1/pplx/m/n/10 vgcfgrestore -f <pas-te the abo-ve co-pied fi-le><volume
+ []
+
+page1_10.tex:1743: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.1743                            \item #
+                                          vgscan 					(to check the status o...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1744: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.1744                            \item #
+                                          lvscan						(to check the status o...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1745: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.1745                            \item#
+                                         vgchange    -ay   <volume group nam...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1746: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.1746                            \item#
+                                         lvchange     -ay   <logical volume ...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1757: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.1757           \item #
+                         vgrename    <existing volume group name><new volume...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+Overfull \hbox (13.69588pt too wide) in paragraph at lines 1757--1758
+\T1/pplx/m/n/10 vo-lu-me group na-me> (to rena-me the vo-lu-me group) 
+ []
+
+
+Overfull \hbox (3.34601pt too wide) in paragraph at lines 1758--1759
+[]\T1/pplx/m/n/10 By default, un-limi-ted lo-gi-cal vo-lu-mes can be crea-
+ []
+
+page1_10.tex:1759: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.1759           \item#
+                        vgchange    -l   <no.><volume group>	(to limit max. ...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1760: You can't use `macro parameter character #' in horizontal mode.
+l.1760           \item Example :  #
+                                    vgchange  -l  2  <vgname>	(to limit max....
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+[64]
+page1_10.tex:1761: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.1761 	        \item #
+                        vgchange   -p  <no.><volume group>	(to limit max. no...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+Overfull \hbox (2.36595pt too wide) in paragraph at lines 1761--1762
+[]\T1/pplx/m/n/10 vgchange -p <no.><volume group> (to li-mit max.
+ []
+
+page1_10.tex:1762: You can't use `macro parameter character #' in horizontal mode.
+l.1762 	        \item Example : #
+                                  vgchange  -p  2  <vgname>	(to limit max. 2...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1763: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.1763 	        \item #
+                        vgchange   -s  <block size in no.><volume group>		(t...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1764: You can't use `macro parameter character #' in horizontal mode.
+l.1764 	        \item Example :  #
+                                   vgchange   -s   4  <vgname>	(to change th...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1772: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.1772          \item #
+                        lvrename   <existing lvname><new lvname>	(to rename ...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1773: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.1773          \item #
+                        lvchange   -pr  <logical volume>	(to put the logical...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1774: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.1774          \item #
+                        lvs 				(to see the logical volume permissions)
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1775: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.1775          \item #
+                        lvchange   -prw  <logical volume>	(to put the logica...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1784: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.1784           \item #
+                         vgchange    -an    <volume group>	:(to disable the ...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1785: You can't use `macro parameter character #' in horizontal mode.
+l.1785           #
+                   lvchange    -an    <logical volume>	:(to disable the logi...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+[65]
+page1_10.tex:1794: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.1794           \item #
+                         vgcfgbackup	:(to take a backup of all volume groups)
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1795: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.1795           \item #
+                         vgcfgbackup   <volume group>	:(to take a backup of ...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+Runaway argument?
+{{itemize} 
+page1_10.tex:1797: Paragraph ended before \end  was complete.
+<to be read again> 
+                   \par 
+l.1797 
+       
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+page1_10.tex:1803: You can't use `macro parameter character #' in horizontal mode.
+l.1803    Ans.#
+                cat  /etc/lvm/lvm.conf 		(to see the contents of the LVM con...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1811: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.1811            \item #
+                          cd  /etc/lvm/backup		:(the logical volumes backup ...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1812: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.1812            \item #
+                          cd  /etc/lvm/archive		(:the volume groups backup l...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+Overfull \hbox (20.36592pt too wide) in paragraph at lines 1812--1813
+[]\T1/pplx/m/n/10 cd /et-c/lv-m/ar-chi-ve (:the vo-lu-me groups backup
+ []
+
+page1_10.tex:1820: You can't use `macro parameter character #' in horizontal mode.
+l.1820    Ans.#
+                rpm  -qa   lvm*	:(to know the current version of the LVM pac...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+[66]
+page1_10.tex:1827: You can't use `macro parameter character #' in horizontal mode.
+l.1827    Ans.#
+                vgs				(to see the attributes of the volume group)
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1830: You can't use `macro parameter character #' in horizontal mode.
+l.1830    #
+            vgs   -v 				(to check the UUID of the volume group)
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+Overfull \hbox (8.38588pt too wide) in paragraph at lines 1825--1831
+\T1/pplx/m/n/10 Ans. vgs (to see the at-tri-bu-tes of the vo-lu-me group) 
+ []
+
+page1_10.tex:1837: You can't use `macro parameter character #' in horizontal mode.
+l.1837    Ans. #
+                 lvextend    -l  +100% FREE   <logical volume>	(to extend th...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1839: You can't use `macro parameter character #' in horizontal mode.
+l.1839    #
+            lvextend    -l  50%   <vgname><lvname>		(to extend the logical v...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1847: You can't use `macro parameter character #' in horizontal mode.
+l.1847    Ans. #
+                 lvdisplay    -m  :( to check  on which physical volume the ...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1848: You can't use `macro parameter character #' in horizontal mode.
+l.1848    #
+            lvdisplay   -m   <lvname>	:(to check on which physical volume th...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1856: Misplaced alignment tab character &.
+l.1856 ...ended file system (default in RHEL - 3 &
+                                                   4)
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+[67]
+page1_10.tex:1876: You can't use `macro parameter character #' in horizontal mode.
+l.1876     Ans.#
+                 ls  /sys/class/fc_host	:(to check the available fibre chann...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1876: Missing $ inserted.
+<inserted text> 
+                $
+l.1876     Ans.# ls  /sys/class/fc_
+                                   host	:(to check the available fibre chann...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+page1_10.tex:1877: You can't use `macro parameter character #' in math mode.
+l.1877       #
+               echo  "---"   >  /sys/class/scsi_host/<lun no.>/scan:(to scan...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+LaTeX Warning: Command \frqq invalid in math mode on input line 1877.
+
+page1_10.tex:1878: Missing $ inserted.
+<inserted text> 
+                $
+l.1878 
+       
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+page1_10.tex:1878: Missing } inserted.
+<inserted text> 
+                }
+l.1878 
+       
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (75.56741pt too wide) in paragraph at lines 1874--1878
+\T1/pplx/m/n/10 Ans. ls /sys/class/fc$[]\OML/zplm/m/it/10 ost \OT1/zplm/m/n/10 : (\OML/zplm/m/it/10 tochecktheavailablefibrechannels\OT1/zplm/m/n/10 )\OML/zplm/m/it/10 echo\T1/pplx/m/n/10 -
+ []
+
+page1_10.tex:1878: Extra }, or forgotten \endgroup.
+\@par ... \@noitemerr {\@@par }\fi \else {\@@par }
+                                                  \fi 
+l.1878 
+       
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+page1_10.tex:1885: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.1885            \item #
+                          lsusb or # fdisk -l  :(to know the pen drive name)
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1885: You can't use `macro parameter character #' in horizontal mode.
+l.1885            \item # lsusb or #
+                                     fdisk -l  :(to know the pen drive name)
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1886: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.1886            \item #
+                          mkdir  /mnt/pendrive	:(to create a mount point for...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+Overfull \hbox (10.81596pt too wide) in paragraph at lines 1886--1887
+[]\T1/pplx/m/n/10 mkdir /m-nt/-pen-drive :(to crea-te a mount point
+ []
+
+[68]
+page1_10.tex:1887: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.1887            \item#
+                         mount <pen drive name><mount point> :( to mount the...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1888: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.1888            \item #
+                          cd /mnt/pendrive :(to access the pen drive)
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1898: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.1898           \item #
+                         mkdir /mnt/mycdrom	:(to create the mount point for ...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1899: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.1899           \item #
+                         mount /dev/cdrom /mnt/mycdrom	:(to mount the CD/DVD...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+Overfull \hbox (14.24593pt too wide) in paragraph at lines 1899--1900
+[]\T1/pplx/m/n/10 mount /de-v/cdrom /m-nt/-my-cdrom :(to mount
+ []
+
+page1_10.tex:1900: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.1900           \item #
+                         cd /mnt/mycdrom :(to access the CD/DVD ROM drives)
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1908: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.1908             \item #
+                           mount   -t   iso9660    /root/rhel6.iso   /iso  -...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1909: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.1909 	          \item  #
+                           cdrecord   /root/Desktop/rhel6.iso 	: (to write t...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+Overfull \hbox (3.62595pt too wide) in paragraph at lines 1909--1910
+[]\T1/pplx/m/n/10 cdrecord /root/-Desktop/r-hel6.iso : (to wri-
+ []
+
+page1_10.tex:1911: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.1911 	          \item #
+                          eject  		:	(to eject the CD/DVD drive tray)
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+[69]
+page1_10.tex:1912: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.1912 	          \item #
+                          eject   -t	:	(to insert and close the CD/DVD drive...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+Overfull \hbox (3.39598pt too wide) in paragraph at lines 1918--1922
+\T1/pplx/m/n/10 load ba-lan-cing using strip-ping, mir-ro-ring and
+ []
+
+
+Overfull \hbox (2.67526pt too wide) in paragraph at lines 1923--1924
+[]\T1/pplx/m/n/10 Hardware RAID :(De-pends on ven-dors and
+ []
+
+
+Overfull \hbox (0.92523pt too wide) in paragraph at lines 1924--1925
+[]\T1/pplx/m/n/10 Software RAID :(Does not de-pends on ven-
+ []
+
+
+Overfull \hbox (4.73535pt too wide) in paragraph at lines 1933--1934
+[]\T1/pplx/m/n/10 RAID - 0 ---- Strip-ping ---- Mi-ni-mum 2 disks
+ []
+
+[70]
+Overfull \hbox (10.93596pt too wide) in paragraph at lines 1943--1952
+\T1/pplx/m/n/10 are re-qui-red and the par-ti-ti-on id is "fd".Reading
+ []
+
+page1_10.tex:1953: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.1953       \item #
+                     mdadm   -Cv  /dev/md0   -n  2   /dev/sdb    /dev/sdc   ...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+Overfull \hbox (3.53604pt too wide) in paragraph at lines 1953--1954
+[]\T1/pplx/m/n/10 mdadm -Cv /de-v/md0 -n 2 /de-v/sdb /de-
+ []
+
+page1_10.tex:1954: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.1954       \item #
+                     cat  /proc/mdstat				(to check the RAID - 0 is created ...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1955: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.1955       \item#
+                    mkfs.ext4   /dev/md0  				(to create the ext4 file syste...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1956: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.1956       \item#
+                    mkdir  /mnt/raid0				(to create the RAID - 0 mount point)
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1957: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.1957       \item#
+                    mount   /dev/md0    /mnt/raid0			(to mount RAID - 0 on t...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1958: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.1958       \item#
+                    mdadm   -D  /dev/md0				(to see the details of the RAID ...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1959: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.1959       \item#
+                    mdadm    /dev/md0    -f   /dev/sdb		(to failed the disk ...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+[71]
+page1_10.tex:1960: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.1960       \item#
+                    mdadm   /dev/md0    -r   /dev/sdb		(to remove the above ...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1961: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.1961       \item#
+                    mdadm   /dev/md0    -a   /dev/sdd		(to add the new disk ...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1962: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.1962       \item#
+                    umount   /mnt/raid0				(to unmount the raid file system)
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1963: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.1963       \item#
+                    mdadm   --stop   /dev/md0			(to stop the RAID - 0 volume)
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+Overfull \hbox (3.02599pt too wide) in paragraph at lines 1963--1964
+[]\T1/pplx/m/n/10 mdadm --stop /de-v/md0 (to stop the RAID
+ []
+
+page1_10.tex:1964: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.1964       \item#
+                    mdadm   /dev/md0   --add   /dev/sde		(to add third disk ...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+Overfull \hbox (1.56604pt too wide) in paragraph at lines 1964--1965
+[]\T1/pplx/m/n/10 mdadm /de-v/md0 --add /de-v/s-de (to add
+ []
+
+page1_10.tex:1965: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.1965       \item#
+                    mdadm    --grow   /dev/md0   --raid_device=3	(to grow th...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1965: Missing $ inserted.
+<inserted text> 
+                $
+l.1965 ...em# mdadm    --grow   /dev/md0   --raid_
+                                                  device=3	(to grow the RAID...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+page1_10.tex:1966: LaTeX Error: Command \end{itemize} invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1966     \end{itemize}
+                        
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+page1_10.tex:1966: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1966     \end{itemize}
+                        
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+page1_10.tex:1966: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1966     \end{itemize}
+                        
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+page1_10.tex:1966: Missing $ inserted.
+<inserted text> 
+                $
+l.1966     \end{itemize}
+                        
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (72.17899pt too wide) in paragraph at lines 1965--1967
+[]\T1/pplx/m/n/10 mdadm --grow /de-v/md0 --raid$[]\OML/zplm/m/it/10 evice \OT1/zplm/m/n/10 = \OT1/pplx/m/n/10 3\OT1/zplm/m/n/10 (\OML/zplm/m/it/10 togrowtheRAID \OMS/zplm/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (1.32527pt too wide) in paragraph at lines 1971--1981
+\T1/pplx/m/n/10 Ans. To con-fi-gu-re RAID - 1, mi-ni-mum 2 disks
+ []
+
+page1_10.tex:1982: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.1982         \item #
+                       mdadm   -Cv  /dev/md0   -n  2   /dev/sdb    /dev/sdc ...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+Overfull \hbox (3.53604pt too wide) in paragraph at lines 1982--1983
+[]\T1/pplx/m/n/10 mdadm -Cv /de-v/md0 -n 2 /de-v/sdb /de-
+ []
+
+[72]
+page1_10.tex:1983: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.1983         \item#
+                      cat  /proc/mdstat			(to check the RAID - 1 is created ...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1984: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.1984         \item#
+                      mkfs.ext4   /dev/md0  			(to create the ext4 file syst...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1985: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.1985         \item#
+                      mkdir  /mnt/raid1			(to create the RAID - 1 mount point)
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1986: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.1986         \item#
+                      mount   /dev/md0    /mnt/raid1		(to mount RAID - 1 on ...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1987: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.1987         \item#
+                      mdadm   -D  /dev/md0			(to see the details of the RAID...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1988: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.1988         \item#
+                      mdadm    /dev/md0    -f   /dev/sdb	(to failed the disk...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1989: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.1989         \item#
+                      mdadm   /dev/md0    -r   /dev/sdb	(to remove the above...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1990: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.1990         \item#
+                      mdadm   /dev/md0    -a   /dev/sdd	(to add the new disk...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1991: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.1991         \item#
+                      umount   /mnt/raid1			(to unmount the raid file system)
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1992: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.1992         \item#
+                      mdadm   --stop   /dev/md0		(to stop the RAID - 1 volume)
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+Overfull \hbox (3.02599pt too wide) in paragraph at lines 1992--1993
+[]\T1/pplx/m/n/10 mdadm --stop /de-v/md0 (to stop the RAID
+ []
+
+page1_10.tex:1993: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.1993         \item#
+                      mdadm   /dev/md0   --add   /dev/sde	(to add third disk...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+Overfull \hbox (1.56604pt too wide) in paragraph at lines 1993--1994
+[]\T1/pplx/m/n/10 mdadm /de-v/md0 --add /de-v/s-de (to add
+ []
+
+page1_10.tex:1994: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.1994         \item#
+                      mdadm    --grow   /dev/md0   --raid_device=3	(to grow ...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:1994: Missing $ inserted.
+<inserted text> 
+                $
+l.1994 ...em# mdadm    --grow   /dev/md0   --raid_
+                                                  device=3	(to grow the RAID...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+page1_10.tex:1995: LaTeX Error: Command \end{itemize} invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1995       \end{itemize}
+                          
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+page1_10.tex:1995: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1995       \end{itemize}
+                          
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+page1_10.tex:1995: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1995       \end{itemize}
+                          
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+page1_10.tex:1995: Missing $ inserted.
+<inserted text> 
+                $
+l.1995       \end{itemize}
+                          
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (72.17899pt too wide) in paragraph at lines 1994--1996
+[]\T1/pplx/m/n/10 mdadm --grow /de-v/md0 --raid$[]\OML/zplm/m/it/10 evice \OT1/zplm/m/n/10 = \OT1/pplx/m/n/10 3\OT1/zplm/m/n/10 (\OML/zplm/m/it/10 togrowtheRAID \OMS/zplm/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (0.28598pt too wide) in paragraph at lines 2000--2013
+\T1/pplx/m/n/10 eve-ry disk ap-pro-xi-ma-te-ly 25 - 30Rea-ding and
+ []
+
+[73]
+page1_10.tex:2014: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.2014        \item #
+                      mdadm   -Cv  /dev/md0   -n  2   /dev/sdb    /dev/sdc  ...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+Overfull \hbox (3.53604pt too wide) in paragraph at lines 2014--2015
+[]\T1/pplx/m/n/10 mdadm -Cv /de-v/md0 -n 2 /de-v/sdb /de-
+ []
+
+page1_10.tex:2015: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.2015        \item#
+                     cat  /proc/mdstat			(to check the RAID - 5 is created o...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:2016: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.2016        \item#
+                     mkfs.ext4   /dev/md0  			(to create the ext4 file syste...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:2017: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.2017        \item#
+                     mkdir  /mnt/raid5			(to create the RAID - 5 mount point)
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:2018: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.2018        \item#
+                     mount   /dev/md0    /mnt/raid5		(to mount RAID - 5 on t...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:2019: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.2019        \item#
+                     mdadm   -D  /dev/md0			(to see the details of the RAID ...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:2020: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.2020        \item#
+                     mdadm    /dev/md0    -f   /dev/sdb	(to failed the disk ...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+[74]
+page1_10.tex:2021: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.2021        \item#
+                     mdadm   /dev/md0    -r   /dev/sdb	(to remove the above ...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:2022: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.2022        \item#
+                     mdadm   /dev/md0    -a   /dev/sde	(to add the new disk ...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:2023: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.2023        \item#
+                     umount   /mnt/raid5			(to unmount the raid file system)
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:2024: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.2024        \item#
+                     mdadm   --stop   /dev/md0		(to stop the RAID - 5 volume)
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+Overfull \hbox (3.02599pt too wide) in paragraph at lines 2024--2025
+[]\T1/pplx/m/n/10 mdadm --stop /de-v/md0 (to stop the RAID
+ []
+
+page1_10.tex:2025: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.2025        \item#
+                     mdadm   /dev/md0   --add   /dev/sdf	(to add fourth disk...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+Overfull \hbox (0.10605pt too wide) in paragraph at lines 2025--2026
+[]\T1/pplx/m/n/10 mdadm /de-v/md0 --add /de-v/sdf (to add
+ []
+
+page1_10.tex:2026: You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.2026        \item#
+                     mdadm    --grow   /dev/md0   --raid_device=4	(to grow t...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+page1_10.tex:2026: Missing $ inserted.
+<inserted text> 
+                $
+l.2026 ...em# mdadm    --grow   /dev/md0   --raid_
+                                                  device=4	(to grow the RAID...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+page1_10.tex:2027: LaTeX Error: Command \end{itemize} invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2027      \end{itemize}
+                         
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+page1_10.tex:2027: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2027      \end{itemize}
+                         
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+page1_10.tex:2027: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2027      \end{itemize}
+                         
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+page1_10.tex:2027: Missing $ inserted.
+<inserted text> 
+                $
+l.2027      \end{itemize}
+                         
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (72.17899pt too wide) in paragraph at lines 2026--2028
+[]\T1/pplx/m/n/10 mdadm --grow /de-v/md0 --raid$[]\OML/zplm/m/it/10 evice \OT1/zplm/m/n/10 = \OT1/pplx/m/n/10 4\OT1/zplm/m/n/10 (\OML/zplm/m/it/10 togrowtheRAID \OMS/zplm/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (8.47592pt too wide) in paragraph at lines 2039--2042
+\T1/pplx/m/n/10 fai-led phy-si-cal vo-lu-me from the vo-lu-me group.
+ []
+
+[75]
+Overfull \hbox (6.00612pt too wide) in paragraph at lines 2046--2049
+[]\T1/pplx/b/n/10 What is pv-mo-ve and when it is used in LVM? 
+ []
+
+page1_10.tex:2055: Illegal parameter number in definition of \reserved@b.
+<to be read again> 
+                   }
+l.2055 ...sing more disk space by \textbf{#du -h }
+                                                   |sort  - r command. if an...
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+page1_10.tex:2055: You can't use `macro parameter character #' in horizontal mode.
+<recently read> ##
+                  
+l.2055 ...sing more disk space by \textbf{#du -h }
+                                                   |sort  - r command. if an...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+Overfull \hbox (3.21521pt too wide) in paragraph at lines 2060--2063
+\T1/pplx/m/n/10 from sto-ra-ge to cli-ent using iSC-SI tar-get. Then
+ []
+
+[76]
+Overfull \hbox (9.13525pt too wide) in paragraph at lines 2089--2090
+[]\T1/pplx/m/n/10 O/S is not re-co-gni-zing the re-mo-te luns when
+ []
+
+[77]
+
+page1_10.tex:2219: LaTeX Error: \begin{itemize} on input line 1897 ended by \end{enumerate}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2219 \end{enumerate}
+                      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+)
+
+c:/Users/Admin/Desktop/work/linux_interview_questions/main.tex:54: LaTeX Error: \begin{itemize} on input line 1793 ended by \end{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.54 \end{document}
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[78] (main.aux) )
+(\end occurred inside a group at level 4)
+
+### semi simple group (level 4) entered at line 1793 (\begingroup)
+### simple group (level 3) entered at line 1736 ({)
+### semi simple group (level 2) entered at line 1505 (\begingroup)
+### semi simple group (level 1) entered at line 3 (\begingroup)
+### bottom level 
 Here is how much of TeX's memory you used:
- 7618 strings out of 475285
- 147969 string characters out of 2774119
+ 7624 strings out of 475285
+ 148059 string characters out of 2774119
  664209 words of memory out of 3000000
- 29021 multiletter control sequences out of 15000+600000
+ 29027 multiletter control sequences out of 15000+600000
  495485 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 108i,8n,106p,10653b,377s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 108i,8n,106p,10653b,524s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb><C:/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (48 pages, 159705 bytes).
+Output written on main.pdf (78 pages, 204584 bytes).
 PDF statistics:
- 188 PDF objects out of 1000 (max. 8388607)
+ 284 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
